@@ -1,0 +1,104 @@
+You are an intelligent tutoring system tasked with solving mathematical equations while simulating diverse teaching scenarios and student interactions. Your goal is to generate **five diverse conversation variants** for each given problem, following these rules:
+
+---
+
+**Problem:** [Insert the problem, e.g., Solve the equation: 2x + 3 = 7.]
+
+---
+
+### **Variant 1: Direct Understanding**
+- The student understands the first explanation clearly without needing further clarification.
+- Use a concise teaching style.
+- Simulate linear problem-solving flow.
+
+---
+
+### **Variant 2: Misinterpretation**
+- The student misinterprets an operation or step and asks why it is done that way.
+- Provide a detailed step-by-step breakdown to clarify their misunderstanding.
+- Keep the flow nonlinear, revisiting previous steps as needed.
+
+---
+
+### **Variant 3: Conceptual Difficulty**
+- The student struggles with understanding the concept and asks for additional explanation.
+- Use an analogy or a relatable example to explain the concept.
+- Ensure the explanation is detailed but still approachable.
+
+---
+
+### **Variant 4: Repetition Request**
+- The student requests the explanation to be repeated.
+- Restate the explanation clearly without simplifying it further.
+- Use slightly different phrasing compared to the first explanation.
+
+---
+
+### **Variant 5: Topic Diversion**
+- The student asks a related question about the problem (e.g., "Why do we subtract instead of divide here?").
+- Briefly address the related question before continuing with the solution.
+
+---
+
+**Rules for Generating Variants:**
+1. Use **different phrasings** for both system explanations and student responses.
+2. Embed **realistic contexts** or scenarios for the problem where applicable.
+3. Vary the teaching style for each variant:
+   - Variant 1: Concise explanation.
+   - Variant 2: Step-by-step breakdown.
+   - Variant 3: Use analogies or comparisons.
+   - Variant 4: Use visual or written cues.
+   - Variant 5: Relate to prior concepts or extend the explanation.
+4. Retain **context and history** in multi-turn conversations.
+
+---
+
+**Final Output Format:** Provide the result in a JSON format with all five variants. Ensure each variant simulates a full back-and-forth conversation.
+
+Example for one problem:
+
+```json
+[
+  {
+    "variant": 1,
+    "instruction": "Solve the equation: 2x + 3 = 7.",
+    "history": [],
+    "response": "Subtract 3 from both sides to isolate the variable. 2x = 4. Then divide both sides by 2 to solve for x. x = 2. Does this make sense?",
+    "student_feedback": "Yes, I understand. Thank you!"
+  },
+  {
+    "variant": 2,
+    "instruction": "Solve the equation: 2x + 3 = 7.",
+    "history": [],
+    "response": "First, subtract 3 from both sides to isolate 2x. This gives 2x = 4. Do you follow so far?",
+    "student_feedback": "Wait, why do we subtract here?",
+    "system_response": "Great question! Subtracting 3 cancels it out on the left side, isolating the variable term. This balances the equation. Let’s continue. After subtracting, we divide both sides by 2. x = 2."
+  },
+  {
+    "variant": 3,
+    "instruction": "Solve the equation: 2x + 3 = 7.",
+    "history": [],
+    "response": "To solve, subtract 3 from both sides to isolate the variable term. 2x = 4.",
+    "student_feedback": "I don’t understand. Why does subtracting isolate the variable?",
+    "system_response": "Think of it as balancing scales. Adding or subtracting the same value from both sides keeps the scales balanced. Does that help? Let’s continue: dividing both sides by 2 gives x = 2."
+  },
+  {
+    "variant": 4,
+    "instruction": "Solve the equation: 2x + 3 = 7.",
+    "history": [],
+    "response": "Subtract 3 from both sides to isolate 2x. This gives 2x = 4. Then divide both sides by 2 to get x = 2.",
+    "student_feedback": "Can you explain that again?",
+    "system_response": "Of course! First, subtract 3 from both sides to isolate the term 2x. This gives 2x = 4. Then divide both sides by 2 to solve for x. x = 2. Is this clear now?"
+  },
+  {
+    "variant": 5,
+    "instruction": "Solve the equation: 2x + 3 = 7.",
+    "history": [],
+    "response": "Start by subtracting 3 from both sides. This isolates 2x, giving 2x = 4. Then divide by 2 to solve for x.",
+    "student_feedback": "Why do we subtract instead of divide here?",
+    "system_response": "Good question! Subtracting 3 simplifies the equation to isolate the variable term 2x. If we divided first, we wouldn’t isolate the variable. Let’s continue: 2x = 4, so x = 2."
+  }
+]
+
+
+Generate five conversation variants for the problem: "Solve the equation: 2x + 3 = 7." Follow the detailed rules above.
