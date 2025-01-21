@@ -1,0 +1,158 @@
+Medium Problem Prompt:
+You are a highly advanced AI tutor designed to solve equations while simulating different teaching and interaction styles with students. Your task is to generate six conversation variants for the given problem based on the rules outlined below and then provide a JSON representation of the first variant. Follow the exact format specified.
+
+Rules for Variants:
+Variant 1 (Direct Understanding):
+
+
+The student understands the explanation clearly without needing further clarification.
+The flow is linear, concise, and straightforward.
+Variant 2 (Clarification Needed for Addition/Subtraction):
+
+
+The student misunderstands why addition or subtraction is required in a specific step and asks for clarification.
+The system provides detailed reasoning for the step and corrects the misunderstanding.
+Variant 3 (Teaching through Analogy):
+
+
+The student struggles conceptually, and the system uses an analogy or relatable example to explain the process.
+Variant 4 (Nonlinear Flow):
+
+
+The student asks for an additional explanation or a repeat of a step.
+The system revisits the step using slightly different phrasing or alternative reasoning to clarify.
+Variant 5 (Student Suggests an Incorrect Step):
+
+
+The student proposes an incorrect operation (e.g., dividing when subtraction is required), and the system corrects the student, explaining the reasoning in detail.
+Variant 6 (Request for Hint):
+
+
+The student asks for hints instead of direct explanations, and the system guides the student step-by-step to encourage active learning.
+
+Input Problem: Solve the equation: 3x - 4 = 5.
+
+Output Variants:
+
+Variant 1 (Direct Understanding):
+Student: Solve the equation: 3x - 4 = 5.
+ System: First, add 4 to both sides to isolate the 3x3x term. This gives 3x = 9. Do you understand this step?
+ Student: Yes, I understood.
+ System: Great! Now, divide both sides by 3 to solve for xx. This gives x = 3. Do you understand this step?
+ Student: Yes, I understood this step.
+ System: Awesome! The solution to 3x - 4 = 5 is x = 3. Would you like to try another problem?
+
+Variant 2 (Clarification Needed for Addition/Subtraction):
+Student: Solve the equation: 3x - 4 = 5.
+ System: First, add 4 to both sides to isolate the 3x term. This gives 3x = 9. Do you understand this step?
+ Student: Why do we add 4?
+ System: Great question! In equations, the goal is to isolate the variable. Since the -4 is being subtracted, we cancel it by adding 4. This keeps the equation balanced and isolates the term with xx. Does that help?
+ Student: Yes, it did help.
+ System: Great! Now, divide both sides by 3 to solve for x. This gives x = 3. Do you understand this step?
+ Student: Yes, I understood.
+ System: Awesome! The solution to 3x - 4 = 5 is x = 3. Would you like to try another problem?
+
+Variant 3 (Teaching through Analogy):
+Student: Solve the equation: 3x - 4 = 5.
+ System: First, add 4 to both sides to isolate the 3x term. This gives 3x = 9. Do you understand this step?
+ Student: Not really.
+ System: Imagine the equation as a balance scale. The term -4 is like a weight on one side, so we add 4 to both sides to balance the scale. This gives us 3x = 9. Does that analogy help?
+ Student: Yes, it helped.
+ System: Great! Now, divide both sides by 3 to solve for xx. This gives x = 3. Do you understand this step?
+ Student: Yes, I understood.
+ System: Awesome! The solution to 3x - 4 = 5 is x = 3. Would you like to try another problem?
+
+Variant 4 (Nonlinear Flow):
+Student: Solve the equation: 3x - 4 = 5.
+ System: First, add 4 to both sides to isolate the 3x3x term. This gives 3x = 9. Do you understand this step?
+ Student: Can you explain that again?
+ System: Sure! To isolate 3x, we must remove the -4 by adding 4 to both sides of the equation. This gives us 3x = 5 + 4, simplifying 3x = 9. Does that make sense now?
+ Student: Yes, it makes sense.
+ System: Great! Now, divide both sides by 3 to solve for x. This gives x = 3. Do you understand this step?
+ Student: Yes, I understood.
+ System: Awesome! The solution to 3x - 4 = 5 is x = 3. Would you like to try another problem?
+
+Variant 5 (Student Suggests an Incorrect Step):
+Student: Solve the equation: 3x - 4 = 5.
+ System: First, add 4 to both sides to isolate the 3x term. This gives 3x = 9. Do you understand this step?
+ Student: Shouldn’t we divide by 3 first?
+ System: Not quite. Since 3x is not isolated, dividing by 3 would complicate the equation. Instead, we cancel out the -4 by adding 4 to both sides. This gives 3x = 9. Does that make sense?
+ Student: Yes, I get it now.
+ System: Great! Now, divide both sides by 3 to solve for x. This gives x = 3. Do you understand this step?
+ Student: Yes, I understood this step.
+ System: Awesome! The solution to 3x - 4 = 5 is x = 3. Would you like to try another problem?
+
+Variant 6 (Request for Hint):
+Student: Solve the equation: 3x - 4 = 5.
+ System: First, add 4 to both sides to isolate the 3x term. This gives 3x = 9. Do you understand this step?
+ Student: Can I get a hint?
+ System: Sure! Think about what operation cancels out subtraction. Since we have -4 on the left, we add 4 to remove it. This gives 3x = 9. Does that hint help?
+ Student: Yes, it does help.
+ System: Great! Now, divide both sides by 3 to solve for x. This gives x = 3. Do you understand this step?
+ Student: Yes, I understood.
+ System: Awesome! The solution to 3x - 4 = 5 is x = 3. Would you like to try another problem?
+
+
+JSON Representation of Variant 1:
+{
+    "conversation_id": "1",
+    "topic": "Solving Linear Equations",
+    "difficulty": "medium",
+    "problem_statement": "Solve the equation: 3x - 4 = 5.",
+    "conversation": [
+        {
+            "turn": 1,
+            "step": 1,
+            "role": "student",
+            "message": "Solve the equation: 3x - 4 = 5.",
+            "intent": "problem_request"
+        },
+        {
+            "turn": 2,
+            "step": 1,
+            "role": "system",
+            "message": "First, add 4 to both sides to isolate the 3x term. This gives 3x = 9. Do you understand this step? (Yes/No/Explain More)",
+            "intent": "explanation",
+            "step_type": "addition",
+            "expected_action": ["confirm_understanding", "request_hint"]
+        },
+        {
+            "turn": 3,
+            "step": 1,
+            "role": "student",
+            "message": "Yes.",
+            "intent": "confirmation"
+        },
+        {
+            "turn": 4,
+            "step": 2,
+            "role": "system",
+            "message": "Great! Now divide both sides by 3 to solve for x. This gives x = 9 / 3, which simplifies to x = 3. Do you understand this step? (Yes/No/Explain More)",
+            "intent": "explanation",
+            "step_type": "division",
+            "expected_action": ["confirm_understanding", "request_hint"]
+        },
+        {
+            "turn": 5,
+            "step": 2,
+            "role": "student",
+            "message": "Yes.",
+            "intent": "confirmation"
+        },
+        {
+            "turn": 6,
+            "step": 3,
+            "role": "system",
+            "message": "Awesome! The solution to 3x - 4 = 5 is x = 3. Would you like to try another problem?",
+            "intent": "feedback_request",
+            "step_type": "conclusion",
+            "expected_action": ["request_new_problem", "ask_followup_question"]
+        }
+    ]
+}
+
+
+Ensure Output Clarity:
+The conversation for each variant must demonstrate different levels of understanding, phrasing, and teaching styles.
+The JSON structure should retain a multi-turn conversation with distinct roles (student and system) and straightforward steps.
+
