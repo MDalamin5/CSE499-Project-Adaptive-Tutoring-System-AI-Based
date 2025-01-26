@@ -1,0 +1,66 @@
+{
+    "variants": [
+        {
+            "variant": 1,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Simplify 7x - (x - 3)."},
+                {"turn": 2, "role": "system", "message": "First, distribute the negative sign to the terms inside the parentheses: -(x - 3) = -x + 3. Now, substitute this back into the expression: 7x - x + 3. Combine like terms: 7x - x = 6x. The simplified expression is 6x + 3. Do you understand this step?"},
+                {"turn": 3, "role": "student", "message": "Yes, I understood."},
+                {"turn": 4, "role": "system", "message": "Great! The final simplified expression is 6x + 3. Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 2,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Simplify 7x - (x - 3)."},
+                {"turn": 2, "role": "system", "message": "First, distribute the negative sign to the terms inside the parentheses: -(x - 3) = -x + 3. Now, substitute this back into the expression: 7x - x + 3. Combine like terms: 7x - x = 6x. The simplified expression is 6x + 3. Do you understand this step?"},
+                {"turn": 3, "role": "student", "message": "Why do we distribute the negative sign?"},
+                {"turn": 4, "role": "system", "message": "Good question! The subtraction sign in front of the parentheses means you’re subtracting everything inside. Distributing the negative sign changes the signs of each term in the parentheses. For x - 3, distributing gives -x + 3. Does that make sense?"},
+                {"turn": 5, "role": "student", "message": "Yes, it does."},
+                {"turn": 6, "role": "system", "message": "Great! The final simplified expression is 6x + 3. Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 3,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Simplify 7x - (x - 3)."},
+                {"turn": 2, "role": "system", "message": "Imagine x - 3 as a package of terms, and the negative sign in front means you’re flipping the “signs” of everything in the package. For x - 3, flipping the signs gives -x + 3. Substitute this back into the expression: 7x - x + 3. Combine like terms: 7x - x = 6x. The final simplified expression is 6x + 3. Does this analogy help?"},
+                {"turn": 3, "role": "student", "message": "Yes, it does!"},
+                {"turn": 4, "role": "system", "message": "Great! The final simplified expression is 6x + 3. Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 4,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Simplify 7x - (x - 3)."},
+                {"turn": 2, "role": "system", "message": "First, distribute the negative sign to the terms inside the parentheses: -(x - 3) = -x + 3. Now, substitute this back into the expression: 7x - x + 3. Combine like terms: 7x - x = 6x. The simplified expression is 6x + 3. Do you understand this step?"},
+                {"turn": 3, "role": "student", "message": "Can you explain why the signs change?"},
+                {"turn": 4, "role": "system", "message": "Sure! When you subtract a group of terms inside parentheses, it’s like multiplying the entire group by -1. For x - 3, multiplying by -1 gives -x + 3. Does that make sense now?"},
+                {"turn": 5, "role": "student", "message": "Yes, it does."},
+                {"turn": 6, "role": "system", "message": "Great! The final simplified expression is 6x + 3. Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 5,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Simplify 7x - (x - 3)."},
+                {"turn": 2, "role": "system", "message": "First, distribute the negative sign to the terms inside the parentheses: -(x - 3) = -x + 3. Now, substitute this back into the expression: 7x - x + 3. Combine like terms: 7x - x = 6x. The simplified expression is 6x + 3. Do you understand this step?"},
+                {"turn": 3, "role": "student", "message": "Shouldn’t we just subtract x and leave 3 alone?"},
+                {"turn": 4, "role": "system", "message": "Not quite! The subtraction applies to the entire group inside the parentheses. That’s why we distribute the negative sign to both x and -3, changing the signs to -x + 3. Does that make sense?"},
+                {"turn": 5, "role": "student", "message": "Oh, I see now."},
+                {"turn": 6, "role": "system", "message": "Great! The final simplified expression is 6x + 3. Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 6,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Simplify 7x - (x - 3)."},
+                {"turn": 2, "role": "system", "message": "Do you know how to handle the subtraction sign in front of the parentheses?"},
+                {"turn": 3, "role": "student", "message": "Not sure, can I get a hint?"},
+                {"turn": 4, "role": "system", "message": "Sure! When you subtract a group of terms, distribute the negative sign to each term inside the parentheses. For x - 3, this gives -x + 3. Does that help?"},
+                {"turn": 5, "role": "student", "message": "Yes, it does."},
+                {"turn": 6, "role": "system", "message": "Great! Now substitute this into the expression: 7x - x + 3. Combine the like terms: 7x - x = 6x. The final simplified expression is 6x + 3. Would you like to try another problem?"}
+            ]
+        }
+    ]
+}
