@@ -1,0 +1,66 @@
+{
+    "variants": [
+        {
+            "variant": 1,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Simplify 3y - y(2 - y)."},
+                {"turn": 2, "role": "system", "message": "First, distribute y across (2 - y): y(2) = 2y and y(-y) = -y^2. Substitute this into the expression: 3y - (2y - y^2). Next, distribute the negative sign: 3y - 2y + y^2. Now, combine the y-terms: 3y - 2y = y. The simplified expression is y + y^2 or y^2 + y. Do you understand this step?"},
+                {"turn": 3, "role": "student", "message": "Yes, I understood."},
+                {"turn": 4, "role": "system", "message": "Great! The final simplified expression is y^2 + y. Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 2,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Simplify 3y - y(2 - y)."},
+                {"turn": 2, "role": "system", "message": "First, distribute y across (2 - y): y(2) = 2y and y(-y) = -y^2. Substitute this into the expression: 3y - (2y - y^2). Next, distribute the negative sign: 3y - 2y + y^2. Now, combine the y-terms: 3y - 2y = y. The simplified expression is y + y^2 or y^2 + y. Do you understand this step?"},
+                {"turn": 3, "role": "student", "message": "Why do we distribute the y to both 2 and -y?"},
+                {"turn": 4, "role": "system", "message": "Good question! The distributive property tells us to multiply y by every term inside the parentheses. This ensures the expression remains equivalent. So y(2 - y) becomes 2y - y^2. Does that make sense?"},
+                {"turn": 5, "role": "student", "message": "Yes, it does."},
+                {"turn": 6, "role": "system", "message": "Great! The final simplified expression is y^2 + y. Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 3,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Simplify 3y - y(2 - y)."},
+                {"turn": 2, "role": "system", "message": "Let’s break it down step by step. Imagine y(2 - y) as a group where you multiply y by everything inside. First, distribute y to 2: y(2) = 2y. Next, distribute y to -y: y(-y) = -y^2. Substitute this into the expression: 3y - (2y - y^2). Now, distribute the negative sign across (2y - y^2): 3y - 2y + y^2. Combine the y-terms: 3y - 2y = y. The simplified expression is y + y^2 or y^2 + y. Does that analogy help?"},
+                {"turn": 3, "role": "student", "message": "Yes, it helped."},
+                {"turn": 4, "role": "system", "message": "Great! Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 4,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Simplify 3y - y(2 - y)."},
+                {"turn": 2, "role": "system", "message": "First, distribute y across (2 - y): y(2) = 2y and y(-y) = -y^2. Substitute this into the expression: 3y - (2y - y^2). Next, distribute the negative sign: 3y - 2y + y^2. Now, combine the y-terms: 3y - 2y = y. The simplified expression is y + y^2 or y^2 + y. Do you understand this step?"},
+                {"turn": 3, "role": "student", "message": "Can you explain why -y^2 becomes +y^2?"},
+                {"turn": 4, "role": "system", "message": "Sure! When you distribute the negative sign across (2y - y^2), it changes the sign of each term. So, -(-y^2) = +y^2. Does that make sense now?"},
+                {"turn": 5, "role": "student", "message": "Yes, it does."},
+                {"turn": 6, "role": "system", "message": "Great! The final simplified expression is y^2 + y. Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 5,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Simplify 3y - y(2 - y)."},
+                {"turn": 2, "role": "system", "message": "First, distribute y across (2 - y): y(2) = 2y and y(-y) = -y^2. Substitute this into the expression: 3y - (2y - y^2). Next, distribute the negative sign: 3y - 2y + y^2. Now, combine the y-terms: 3y - 2y = y. The simplified expression is y + y^2 or y^2 + y. Do you understand this step?"},
+                {"turn": 3, "role": "student", "message": "Shouldn’t we combine y and -y^2?"},
+                {"turn": 4, "role": "system", "message": "Not quite! y and -y^2 are not like terms because they have different powers of y. Like terms must have the same variable and exponent. Does that make sense?"},
+                {"turn": 5, "role": "student", "message": "Oh, I see now."},
+                {"turn": 6, "role": "system", "message": "Great! The final simplified expression is y^2 + y. Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 6,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Simplify 3y - y(2 - y)."},
+                {"turn": 2, "role": "system", "message": "First, distribute y across (2 - y). Do you know what y(2) equals?"},
+                {"turn": 3, "role": "student", "message": "Not sure, can I get a hint?"},
+                {"turn": 4, "role": "system", "message": "Sure! Multiply y by 2: y(2) = 2y. Now, multiply y by -y: y(-y) = -y^2. Substitute these into the expression: 3y - (2y - y^2). Distribute the negative sign across (2y - y^2): 3y - 2y + y^2. Combine the y-terms: 3y - 2y = y. The simplified expression is y + y^2 or y^2 + y. Does that help?"},
+                {"turn": 5, "role": "student", "message": "Yes, it does."},
+                {"turn": 6, "role": "system", "message": "Great! The final simplified expression is y^2 + y. Would you like to try another problem?"}
+            ]
+        }
+    ]
+}
