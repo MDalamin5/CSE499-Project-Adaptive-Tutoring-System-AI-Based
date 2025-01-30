@@ -1,0 +1,51 @@
+{
+    "variants": [
+        {
+            "variant": 1,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Solve the following equation: 7 = x/2."},
+                {"turn": 2, "role": "system", "message": "To isolate x, multiply both sides by 2. This gives x = 7 * 2, which simplifies to x = 14. Do you understand this step?"},
+                {"turn": 3, "role": "student", "message": "Yes."},
+                {"turn": 4, "role": "system", "message": "Great! The final solution is x = 14. Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 2,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Solve the following equation: 7 = x/2."},
+                {"turn": 2, "role": "system", "message": "To solve for x, multiply both sides by 2. What does that give us?"},
+                {"turn": 3, "role": "student", "message": "x = 14."},
+                {"turn": 4, "role": "system", "message": "Exactly! The solution to 7 = x/2 is x = 14. Would you like to try another equation?"}
+            ]
+        },
+        {
+            "variant": 3,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Solve the following equation: 7 = x/2."},
+                {"turn": 2, "role": "system", "message": "Imagine you have x divided into 2 equal groups, and each group contains 7. To find the total amount, multiply 7 by 2. That gives x = 14. Does this analogy help?"},
+                {"turn": 3, "role": "student", "message": "Yes, it does."},
+                {"turn": 4, "role": "system", "message": "Great! The final solution is x = 14. Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 4,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Solve the following equation: 7 = x/2."},
+                {"turn": 2, "role": "system", "message": "To solve for x, multiply both sides by 2. Do you understand why we do this?"},
+                {"turn": 3, "role": "student", "message": "Not really."},
+                {"turn": 4, "role": "system", "message": "No problem! Since x is divided by 2, multiplying by 2 cancels out the division, leaving only x on one side. Now, does it make sense?"},
+                {"turn": 5, "role": "student", "message": "Yes, I get it now."},
+                {"turn": 6, "role": "system", "message": "Great! The final solution is x = 14. Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 5,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Solve the following equation: 7 = x/2."},
+                {"turn": 2, "role": "system", "message": "Let's take it step by step. What happens if we multiply both sides by 2?"},
+                {"turn": 3, "role": "student", "message": "We get x = 14."},
+                {"turn": 4, "role": "system", "message": "Correct! The final solution is x = 14. Would you like to solve another equation?"}
+            ]
+        }
+    ]
+}
