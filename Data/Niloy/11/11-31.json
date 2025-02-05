@@ -1,0 +1,257 @@
+{
+    "problem": "Solve the equation: -4 = -7 + 3x.",
+    "variants": [
+        {
+            "variant_id": "1",
+            "description": "Direct Understanding",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "role": "student",
+                    "message": "Solve the equation: -4 = -7 + 3x."
+                },
+                {
+                    "turn": 2,
+                    "role": "system",
+                    "message": "First, add 7 to both sides of the equation to isolate the term with x. This gives: -4 + 7 = 3x, which simplifies to 3 = 3x. Do you understand this step?"
+                },
+                {
+                    "turn": 3,
+                    "role": "student",
+                    "message": "Yes."
+                },
+                {
+                    "turn": 4,
+                    "role": "system",
+                    "message": "Great! Next, divide both sides by 3 to solve for x: x = 1. Do you understand this step? "
+                },
+                {
+                    "turn": 5,
+                    "role": "student",
+                    "message": "Yes."
+                },
+                {
+                    "turn": 6,
+                    "role": "system",
+                    "message": "Fantastic! The solution to the equation is x = 1. Would you like to try another problem?"
+                }
+            ]
+        },
+        {
+            "variant_id": "2",
+            "description": "Hints for Factoring",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "role": "student",
+                    "message": "Solve the equation: -4 = -7 + 3x."
+                },
+                {
+                    "turn": 2,
+                    "role": "system",
+                    "message": "Start by isolating the term with x. Add 7 to both sides. Do you know what -4 + 7 equals?"
+                },
+                {
+                    "turn": 3,
+                    "role": "student",
+                    "message": "It's 3."
+                },
+                {
+                    "turn": 4,
+                    "role": "system",
+                    "message": "Correct! Now the equation becomes: 3 = 3x. Divide both sides by 3 to solve for x. Does this make sense?"
+                },
+                {
+                    "turn": 5,
+                    "role": "student",
+                    "message": "Yes, it does."
+                },
+                {
+                    "turn": 6,
+                    "role": "system",
+                    "message": "Great! Solving gives x = 1. Would you like to try another similar problem?"
+                }
+            ]
+        },
+        {
+            "variant_id": "3",
+            "description": "Request for Alternative Method",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "role": "student",
+                    "message": "Solve the equation: -4 = -7 + 3x."
+                },
+                {
+                    "turn": 2,
+                    "role": "system",
+                    "message": "First, add 7 to both sides to isolate the term with x. This gives: -4 + 7 = 3x, which simplifies to 3 = 3x. Do you understand this step?"
+                },
+                {
+                    "turn": 3,
+                    "role": "student",
+                    "message": "Can you show me another way to solve this?"
+                },
+                {
+                    "turn": 4,
+                    "role": "system",
+                    "message": "Sure! Rearrange the equation to place all terms on one side: -4 - 3x + 7 = 0. This simplifies to 3 - 3x = 0. Solve for x by adding 3x to both sides: 3 = 3x. Divide by 3 to get x = 1. Does this alternative method make sense?"
+                },
+                {
+                    "turn": 5,
+                    "role": "student",
+                    "message": "Yes, it does now."
+                },
+                {
+                    "turn": 6,
+                    "role": "system",
+                    "message": "Great! Both methods lead to x = 1. Would you like to explore further?"
+                }
+            ]
+        },
+        {
+            "variant_id": "4",
+            "description": "Misunderstanding Concept of Roots",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "role": "student",
+                    "message": "Solve the equation: -4 = -7 + 3x."
+                },
+                {
+                    "turn": 2,
+                    "role": "system",
+                    "message": "Start by adding 7 to both sides to isolate the term with x. This gives: -4 + 7 = 3x, which simplifies to 3 = 3x. Do you understand this step?"
+                },
+                {
+                    "turn": 3,
+                    "role": "student",
+                    "message": "Why do we add 7 to both sides?"
+                },
+                {
+                    "turn": 4,
+                    "role": "system",
+                    "message": "Good question! Adding 7 to both sides helps to isolate the term with x on one side of the equation. The goal is to simplify the equation so we can solve for x. Does that explanation help?"
+                },
+                {
+                    "turn": 5,
+                    "role": "student",
+                    "message": "Yes, it makes sense now."
+                },
+                {
+                    "turn": 6,
+                    "role": "system",
+                    "message": "Great! Solving further gives x = 1. Would you like to try another problem?"
+                }
+            ]
+        },
+        {
+            "variant_id": "5",
+            "description": "Nonlinear Flow",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "role": "student",
+                    "message": "Solve the equation: -4 = -7 + 3x."
+                },
+                {
+                    "turn": 2,
+                    "role": "system",
+                    "message": "Add 7 to both sides to isolate the term with x. This gives: -4 + 7 = 3x, which simplifies to 3 = 3x. Do you understand this step?"
+                },
+                {
+                    "turn": 3,
+                    "role": "student",
+                    "message": "Can we go back and recheck how we got 3?"
+                },
+                {
+                    "turn": 4,
+                    "role": "system",
+                    "message": "Of course! Adding 7 to both sides means combining -4 and 7: -4 + 7 = 3. This simplifies the equation to 3 = 3x. Does this help clarify?"
+                },
+                {
+                    "turn": 5,
+                    "role": "student",
+                    "message": "Yes, I get it now."
+                },
+                {
+                    "turn": 6,
+                    "role": "system",
+                    "message": "Great! Dividing both sides by 3 gives x = 1. Let’s continue."
+                }
+            ]
+        },
+        {
+            "variant_id": "6",
+            "description": "Student Suggests an Incorrect Step",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "role": "student",
+                    "message": "Solve the equation: -4 = -7 + 3x."
+                },
+                {
+                    "turn": 2,
+                    "role": "system",
+                    "message": "Add 7 to both sides to isolate the term with x. This gives: -4 + 7 = 3x, which simplifies to 3 = 3x. Do you understand this step?"
+                },
+                {
+                    "turn": 3,
+                    "role": "student",
+                    "message": "Should we divide both sides by -7 first?"
+                },
+                {
+                    "turn": 4,
+                    "role": "system",
+                    "message": "Not quite. Dividing by -7 would not simplify the equation correctly because -7 is not the coefficient of x. Instead, add 7 to both sides to isolate 3x. From there, divide by 3 to solve for x. Does this make sense?"
+                },
+                {
+                    "turn": 5,
+                    "role": "student",
+                    "message": "Yes, it makes sense now."
+                },
+                {
+                    "turn": 6,
+                    "role": "system",
+                    "message": "Great! Solving gives x = 1. Would you like another problem?"
+                }
+            ]
+        },
+        {
+            "variant_id": "7",
+            "description": "Multiple Explanations and Scaffolding",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "role": "student",
+                    "message": "Solve the equation: -4 = -7 + 3x."
+                },
+                {
+                    "turn": 2,
+                    "role": "system",
+                    "message": "Add 7 to both sides to isolate the term with x. This gives: -4 + 7 = 3x, which simplifies to 3 = 3x. Do you understand this step?"
+                },
+                {
+                    "turn": 3,
+                    "role": "student",
+                    "message": "No, I don’t understand."
+                },
+                {
+                    "turn": 4,
+                    "role": "system",
+                    "message": "Let’s break it down. Adding 7 to both sides means you’re eliminating the constant term on the right-hand side. Combining -4 and 7 gives 3, so the equation becomes: 3 = 3x. Does this help?"
+                },
+                {
+                    "turn": 5,
+                    "role": "student",
+                    "message": "Yes, I understand now."
+                },
+                {
+                    "turn": 6,
+                    "role": "system",
+                    "message": "Great! Dividing both sides by 3 gives x = 1. Would you like me to explain more?"
+                }
+            ]
+        }
+    ]
+}
