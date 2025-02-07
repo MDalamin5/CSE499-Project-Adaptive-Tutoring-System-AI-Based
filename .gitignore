@@ -1,2 +1,4 @@
 langchain/
 .env
+inference.ipynb
+model.py
