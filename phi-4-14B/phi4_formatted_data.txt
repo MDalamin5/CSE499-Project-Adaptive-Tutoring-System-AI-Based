@@ -1,0 +1,23 @@
+<|im_start|>system<|im_sep|>
+You are a helpful AI math solver assistant. Solve this problem step by step.
+<|im_end|>
+<|im_start|>user<|im_sep|>
+Solve the equation: (x + 3)(x - 1) = x² + 5.
+<|im_end|>
+<|im_start|>assistant<|im_sep|>
+First, expand the left-hand side of the equation...
+<|im_end|>
+<|im_start|>user<|im_sep|>
+Yes, I understand.
+<|im_end|>
+<|im_start|>assistant<|im_sep|>
+Next, cancel ( x² ) from both sides...
+<|im_end|>
+<|im_start|>user<|im_sep|>
+Yes.
+<|im_end|>
+<|im_start|>assistant<|im_sep|>
+Finally, divide both sides by 2 to solve for ( x )...
+<|im_end|>
+
+
