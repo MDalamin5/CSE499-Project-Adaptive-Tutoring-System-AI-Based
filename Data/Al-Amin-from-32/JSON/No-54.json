@@ -1,0 +1,494 @@
+[
+        {
+            "variant_id": "1",
+            "description": "Direct Understanding",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 10(1 - x/10) - (10 - x) - 1/100(10 - x) = 0.05."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, simplify ( 10(1 - x/10) ). Multiply ( 10 ) by each term: ( 10 * 1 = 10 ) and ( 10 * -x/10 = -x ). This gives ( 10 - x ). For ( -(10 - x) ), distribute the negative sign to get ( -10 + x ). Finally, distribute ( -1/100 ) across ( (10 - x) ): ( -1/100 * 10 = -0.1 ) and ( -1/100 * -x = x/100 ). The equation becomes: ( 10 - x - 10 + x - 0.1 + x/100 = 0.05 ). Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Yes, I understand."
+                },
+                {
+                    "turn": 4,
+                    "step": 2,
+                    "role": "system",
+                    "message": "Next, combine like terms. Combine the constants: ( 10 - 10 - 0.1 = -0.1 ). Combine the ( x )-terms: ( -x + x + x/100 = x/100 ). The equation becomes: ( -0.1 + x/100 = 0.05 ). Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 5,
+                    "step": 3,
+                    "role": "student",
+                    "message": "Yes."
+                },
+                {
+                    "turn": 6,
+                    "step": 4,
+                    "role": "system",
+                    "message": "Now, move the constant to the other side. Add 0.1 to both sides: ( x/100 = 0.05 + 0.1 ), which simplifies to ( x/100 = 0.15 ). Multiply both sides by 100 to solve for ( x ): ( x = 15 ). The solution is ( x = 15 ). Would you like to try another equation?"
+                }
+            ]
+        },
+        {
+            "variant_id": "2",
+            "description": "Hints for Simplification",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 10(1 - x/10) - (10 - x) - 1/100(10 - x) = 0.05."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, simplify ( 10(1 - x/10) ). Multiply ( 10 ) by each term: ( 10 * 1 = 10 ) and ( 10 * -x/10 = -x ). For ( -(10 - x) ), distribute the negative sign: ( -10 + x ). For ( -1/100(10 - x) ), multiply ( -1/100 * 10 = -0.1 ) and ( -1/100 * -x = x/100 ). The equation becomes: ( 10 - x - 10 + x - 0.1 + x/100 = 0.05 ). Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Can you give me a hint?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Sure! For ( 10(1 - x/10) ), distribute ( 10 ): ( 10 * 1 = 10 ) and ( 10 * -x/10 = -x ). This simplifies to ( 10 - x ). Does this help?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I understand now."
+                },
+                {
+                    "turn": 6,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Great! Combine like terms. Combine the constants: ( 10 - 10 - 0.1 = -0.1 ). Combine the ( x )-terms: ( -x + x + x/100 = x/100 ). The equation becomes: ( -0.1 + x/100 = 0.05 ). Do you follow this part?"
+                },
+                {
+                    "turn": 7,
+                    "step": 4,
+                    "role": "student",
+                    "message": "Yes, I do."
+                },
+                {
+                    "turn": 8,
+                    "step": 5,
+                    "role": "system",
+                    "message": "Now, add 0.1 to both sides: ( x/100 = 0.05 + 0.1 ), which simplifies to ( x/100 = 0.15 ). Multiply both sides by 100: ( x = 15 ). Does that make sense?"
+                },
+                {
+                    "turn": 9,
+                    "step": 6,
+                    "role": "student",
+                    "message": "Yes, it does now."
+                },
+                {
+                    "turn": 10,
+                    "step": 7,
+                    "role": "system",
+                    "message": "Perfect! The solution is ( x = 15 ). Let me know if you’d like to try another problem."
+                }
+            ]
+        },
+        {
+            "variant_id": "3",
+            "description": "Request for Alternative Method",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 10(1 - x/10) - (10 - x) - 1/100(10 - x) = 0.05."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, simplify ( 10(1 - x/10) ): ( 10 * 1 = 10 ) and ( 10 * -x/10 = -x ). The equation becomes: ( 10 - x - (10 - x) - 1/100(10 - x) = 0.05 ). Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Can we solve this without distributing first?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "That’s an interesting idea! Distributing is the most efficient way to simplify here. Without it, isolating ( x ) would be tricky. Would you like to proceed with distributing first?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Okay, let’s distribute first."
+                },
+                {
+                    "turn": 6,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Great! After distributing all terms, the equation simplifies to ( -0.1 + x/100 = 0.05 ). Combine terms step by step. Are you ready to proceed?"
+                },
+                {
+                    "turn": 7,
+                    "step": 4,
+                    "role": "student",
+                    "message": "Yes, let’s continue."
+                },
+                {
+                    "turn": 8,
+                    "step": 5,
+                    "role": "system",
+                    "message": "Now, add 0.1 to both sides: ( x/100 = 0.05 + 0.1 ), which simplifies to ( x/100 = 0.15 ). Multiply both sides by 100: ( x = 15 ). Does that make sense?"
+                },
+                {
+                    "turn": 9,
+                    "step": 6,
+                    "role": "student",
+                    "message": "Yes, I understand now."
+                },
+                {
+                    "turn": 10,
+                    "step": 7,
+                    "role": "system",
+                    "message": "Awesome! The solution is ( x = 15 ). Let me know if you’d like to try a similar problem!"
+                }
+            ]
+        },
+        {
+            "variant_id": "4",
+            "description": "Misunderstanding Concept",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 10(1 - x/10) - (10 - x) - 1/100(10 - x) = 0.05."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, simplify ( 10(1 - x/10) ): ( 10 * 1 = 10 ) and ( 10 * -x/10 = -x ). For ( -(10 - x) ), distribute the negative sign to get ( -10 + x ). For ( -1/100(10 - x) ), distribute ( -1/100 ): ( -1/100 * 10 = -0.1 ) and ( -1/100 * -x = x/100 ). The equation becomes: ( 10 - x - 10 + x - 0.1 + x/100 = 0.05 ). Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Why do we need to distribute first?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Great question! Distributing removes parentheses, which helps us simplify and combine like terms. This is the most systematic way to solve equations. Does that help?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I understand now."
+                },
+                {
+                    "turn": 6,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Perfect! After distributing, combine like terms: ( -x + x + x/100 = x/100 ) and ( 10 - 10 - 0.1 = -0.1 ). The equation becomes: ( -0.1 + x/100 = 0.05 ). Shall we continue?"
+                },
+                {
+                    "turn": 7,
+                    "step": 4,
+                    "role": "student",
+                    "message": "Yes, let’s proceed."
+                },
+                {
+                    "turn": 8,
+                    "step": 5,
+                    "role": "system",
+                    "message": "Now, add 0.1 to both sides: ( x/100 = 0.05 + 0.1 ), which simplifies to ( x/100 = 0.15 ). Multiply both sides by 100: ( x = 15 ). Does this make sense?"
+                },
+                {
+                    "turn": 9,
+                    "step": 6,
+                    "role": "student",
+                    "message": "Yes, thank you for explaining!"
+                },
+                {
+                    "turn": 10,
+                    "step": 7,
+                    "role": "system",
+                    "message": "You’re welcome! Great work. Let me know if you want to practice more equations."
+                }
+            ]
+        },
+                {
+                    "variant_id": "5",
+                    "description": "Nonlinear Flow",
+                    "conversation": [
+                        {
+                            "turn": 1,
+                            "step": 1,
+                            "role": "student",
+                            "message": "Solve the equation: 10(1 - x/10) - (10 - x) - 1/100(10 - x) = 0.05."
+                        },
+                        {
+                            "turn": 2,
+                            "step": 1,
+                            "role": "system",
+                            "message": "First, simplify ( 10(1 - x/10) ). Distribute ( 10 ): ( 10 * 1 = 10 ) and ( 10 * -x/10 = -x ). The equation becomes: ( 10 - x - (10 - x) - 1/100(10 - x) = 0.05 ). Do you understand this step? (Yes/No/Explain More)"
+                        },
+                        {
+                            "turn": 3,
+                            "step": 1,
+                            "role": "student",
+                            "message": "Can you explain again how to distribute ( 10(1 - x/10) )?"
+                        },
+                        {
+                            "turn": 4,
+                            "step": 1,
+                            "role": "system",
+                            "message": "Sure! When distributing ( 10 ), multiply it by each term inside the parentheses: ( 10 * 1 = 10 ) and ( 10 * -x/10 = -x ). Does this help?"
+                        },
+                        {
+                            "turn": 5,
+                            "step": 2,
+                            "role": "student",
+                            "message": "Yes, that’s clear now."
+                        },
+                        {
+                            "turn": 6,
+                            "step": 3,
+                            "role": "system",
+                            "message": "Great! After distributing all terms, the equation becomes ( 10 - x - 10 + x - 0.1 + x/100 = 0.05 ). Combine like terms: ( 10 - 10 = 0 ), ( -x + x = 0 ), and constants simplify to ( -0.1 + x/100 = 0.05 ). Do you follow this part?"
+                        },
+                        {
+                            "turn": 7,
+                            "step": 4,
+                            "role": "student",
+                            "message": "Yes, I do now."
+                        },
+                        {
+                            "turn": 8,
+                            "step": 5,
+                            "role": "system",
+                            "message": "Next, add ( 0.1 ) to both sides: ( x/100 = 0.05 + 0.1 ), which simplifies to ( x/100 = 0.15 ). Multiply both sides by 100: ( x = 15 ). Does this solution make sense?"
+                        },
+                        {
+                            "turn": 9,
+                            "step": 6,
+                            "role": "student",
+                            "message": "Yes, thank you!"
+                        },
+                        {
+                            "turn": 10,
+                            "step": 7,
+                            "role": "system",
+                            "message": "You’re welcome! Great job working through it. Let me know if you’d like another problem."
+                        }
+                    ]
+                },
+                {
+                    "variant_id": "6",
+                    "description": "Student Suggests an Incorrect Step",
+                    "conversation": [
+                        {
+                            "turn": 1,
+                            "step": 1,
+                            "role": "student",
+                            "message": "Solve the equation: 10(1 - x/10) - (10 - x) - 1/100(10 - x) = 0.05."
+                        },
+                        {
+                            "turn": 2,
+                            "step": 1,
+                            "role": "system",
+                            "message": "First, simplify ( 10(1 - x/10) ): ( 10 * 1 = 10 ) and ( 10 * -x/10 = -x ). The equation becomes: ( 10 - x - (10 - x) - 1/100(10 - x) = 0.05 ). Do you understand this step? (Yes/No/Explain More)"
+                        },
+                        {
+                            "turn": 3,
+                            "step": 1,
+                            "role": "student",
+                            "message": "Shouldn’t we divide both sides by ( 10 ) first?"
+                        },
+                        {
+                            "turn": 4,
+                            "step": 1,
+                            "role": "system",
+                            "message": "That’s an interesting idea! However, dividing by ( 10 ) before simplifying the terms inside parentheses would complicate the equation. Let’s distribute and simplify the terms first. Does that make sense?"
+                        },
+                        {
+                            "turn": 5,
+                            "step": 2,
+                            "role": "student",
+                            "message": "Oh, I see now. Let’s proceed with distributing."
+                        },
+                        {
+                            "turn": 6,
+                            "step": 3,
+                            "role": "system",
+                            "message": "Great! After distributing and combining like terms, the equation simplifies to ( -0.1 + x/100 = 0.05 ). Are you following this step?"
+                        },
+                        {
+                            "turn": 7,
+                            "step": 4,
+                            "role": "student",
+                            "message": "Yes, I understand now."
+                        },
+                        {
+                            "turn": 8,
+                            "step": 5,
+                            "role": "system",
+                            "message": "Perfect! Add ( 0.1 ) to both sides: ( x/100 = 0.05 + 0.1 ), which simplifies to ( x/100 = 0.15 ). Finally, multiply both sides by 100: ( x = 15 ). Does this solution make sense?"
+                        },
+                        {
+                            "turn": 9,
+                            "step": 6,
+                            "role": "student",
+                            "message": "Yes, it does now. Thank you!"
+                        },
+                        {
+                            "turn": 10,
+                            "step": 7,
+                            "role": "system",
+                            "message": "You’re welcome! Great effort! Let me know if you’d like to solve another equation."
+                        }
+                    ]
+                },
+                {
+                    "variant_id": "7",
+                    "description": "Multiple Explanations and Scaffolding",
+                    "conversation": [
+                        {
+                            "turn": 1,
+                            "step": 1,
+                            "role": "student",
+                            "message": "Solve the equation: 10(1 - x/10) - (10 - x) - 1/100(10 - x) = 0.05."
+                        },
+                        {
+                            "turn": 2,
+                            "step": 1,
+                            "role": "system",
+                            "message": "First, simplify ( 10(1 - x/10) ): ( 10 * 1 = 10 ) and ( 10 * -x/10 = -x ). The equation becomes: ( 10 - x - (10 - x) - 1/100(10 - x) = 0.05 ). Do you understand this step? (Yes/No/Explain More)"
+                        },
+                        {
+                            "turn": 3,
+                            "step": 1,
+                            "role": "student",
+                            "message": "I don’t get how to distribute ( -1/100(10 - x) )."
+                        },
+                        {
+                            "turn": 4,
+                            "step": 1,
+                            "role": "system",
+                            "message": "No problem! Multiply ( -1/100 ) by each term inside the parentheses: ( -1/100 * 10 = -0.1 ) and ( -1/100 * -x = x/100 ). Does that explanation help?"
+                        },
+                        {
+                            "turn": 5,
+                            "step": 2,
+                            "role": "student",
+                            "message": "Yes, that makes sense now."
+                        },
+                        {
+                            "turn": 6,
+                            "step": 3,
+                            "role": "system",
+                            "message": "Great! After distributing all terms, the equation becomes ( 10 - x - 10 + x - 0.1 + x/100 = 0.05 ). Combine like terms: ( -0.1 + x/100 = 0.05 ). Shall we proceed?"
+                        },
+                        {
+                            "turn": 7,
+                            "step": 4,
+                            "role": "student",
+                            "message": "Yes, let’s continue."
+                        },
+                        {
+                            "turn": 8,
+                            "step": 5,
+                            "role": "system",
+                            "message": "Add ( 0.1 ) to both sides: ( x/100 = 0.05 + 0.1 ), which simplifies to ( x/100 = 0.15 ). Finally, multiply both sides by 100: ( x = 15 ). Does this solution make sense?"
+                        },
+                        {
+                            "turn": 9,
+                            "step": 6,
+                            "role": "student",
+                            "message": "Yes, I understand it now. Thank you!"
+                        },
+                        {
+                            "turn": 10,
+                            "step": 7,
+                            "role": "system",
+                            "message": "You’re welcome! Great job! Let me know if you’d like to solve another equation."
+                        }
+                    ]
+                },
+                {
+                    "variant_id": "8",
+                    "description": "Student Solves Incorrectly but Tries Again",
+                    "conversation": [
+                        {
+                            "turn": 1,
+                            "step": 1,
+                            "role": "student",
+                            "message": "Solve the equation: 10(1 - x/10) - (10 - x) - 1/100(10 - x) = 0.05."
+                        },
+                        {
+                            "turn": 2,
+                            "step": 1,
+                            "role": "system",
+                            "message": "First, simplify ( 10(1 - x/10) ): ( 10 * 1 = 10 ) and ( 10 * -x/10 = -x ). The equation becomes: ( 10 - x - (10 - x) - 1/100(10 - x) = 0.05 ). Do you understand this step? (Yes/No/Explain More)"
+                        },
+                        {
+                            "turn": 3,
+                            "step": 1,
+                            "role": "student",
+                            "message": "I think the equation becomes ( -0.05 + x = 0.05 )."
+                        },
+                        {
+                            "turn": 4,
+                            "step": 1,
+                            "role": "system",
+                            "message": "Close, but not quite. After combining terms, the equation simplifies to ( -0.1 + x/100 = 0.05 ). Does this help clarify?"
+                        },
+                        {
+                            "turn": 5,
+                            "step": 2,
+                            "role": "student",
+                            "message": "Oh, I see now. Yes, that makes sense."
+                        },
+                        {
+                            "turn": 6,
+                            "step": 3,
+                            "role": "system",
+                            "message": "Great! Now, add ( 0.1 ) to both sides: ( x/100 = 0.05 + 0.1 ), which simplifies to ( x/100 = 0.15 ). Are you ready for the final step?"
+                        },
+                        {
+                            "turn": 7,
+                            "step": 4,
+                            "role": "student",
+                            "message": "Yes, let’s finish."
+                        },
+                        {
+                            "turn": 8,
+                            "step": 5,
+                            "role": "system",
+                            "message": "Finally, multiply both sides by 100 to solve for ( x ): ( x = 15 ). The solution is ( x = 15 ). Great job correcting yourself! Would you like to try another problem?"
+                        }
+                    ]
+                }
+]

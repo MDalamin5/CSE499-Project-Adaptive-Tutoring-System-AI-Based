@@ -1,0 +1,368 @@
+[
+        {
+            "variant_id": "1",
+            "description": "Direct Understanding",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 2(x + 4) + 3(x - 10) = 8."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, expand all the terms. Distribute the 2 across (x + 4): 2 * x = 2x and 2 * 4 = 8. Distribute the 3 across (x - 10): 3 * x = 3x and 3 * -10 = -30. This gives: 2x + 8 + 3x - 30 = 8. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Yes."
+                },
+                {
+                    "turn": 4,
+                    "step": 2,
+                    "role": "system",
+                    "message": "Next, combine like terms on the left-hand side. Combine the x terms: 2x + 3x = 5x. Combine the constant terms: 8 - 30 = -22. The equation becomes: 5x - 22 = 8. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 5,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Now, solve for x. Add 22 to both sides: 5x = 30. Then divide by 5: x = 30 / 5 = 6. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 6,
+                    "step": 4,
+                    "role": "student",
+                    "message": "Yes."
+                },
+                {
+                    "turn": 7,
+                    "step": 5,
+                    "role": "system",
+                    "message": "Fantastic! The solution to 2(x + 4) + 3(x - 10) = 8 is x = 6. Would you like to try another problem?"
+                }
+            ]
+        },
+        {
+            "variant_id": "2",
+            "description": "Hints for Simplification",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 2(x + 4) + 3(x - 10) = 8."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, expand all the terms. Distribute the 2 across (x + 4) and the 3 across (x - 10). This gives: 2x + 8 + 3x - 30 = 8. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Can you give me a hint?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Sure! To distribute, multiply the number outside the parentheses by each term inside. For example, 2 * x = 2x and 2 * 4 = 8. Similarly, 3 * x = 3x and 3 * -10 = -30. Does that help?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I understand now."
+                },
+                {
+                    "turn": 6,
+                    "step": 2,
+                    "role": "system",
+                    "message": "Great! Combine like terms: 2x + 3x = 5x and 8 - 30 = -22. The equation becomes: 5x - 22 = 8. Then solve for x: x = 6. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 7,
+                    "step": 3,
+                    "role": "student",
+                    "message": "Yes."
+                },
+                {
+                    "turn": 8,
+                    "step": 4,
+                    "role": "system",
+                    "message": "Awesome! The solution to 2(x + 4) + 3(x - 10) = 8 is x = 6. Would you like to try another one?"
+                }
+            ]
+        },
+        {
+            "variant_id": "3",
+            "description": "Request for Alternative Method",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 2(x + 4) + 3(x - 10) = 8."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, expand all the terms. This gives: 2x + 8 + 3x - 30 = 8. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Can we solve this another way?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Sure! Instead of expanding immediately, you could subtract the constant on the right-hand side and simplify the expressions later. Would you like to proceed this way?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I understand now."
+                },
+                {
+                    "turn": 6,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Great! Either way, the solution to the equation is x = 6. Let me know if you'd like further clarification."
+                }
+            ]
+        },
+        {
+            "variant_id": "4",
+            "description": "Misunderstanding Concept",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 2(x + 4) + 3(x - 10) = 8."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, expand all the terms. This gives: 2x + 8 + 3x - 30 = 8. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Why do we distribute the terms?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Good question! Distributing removes the parentheses by multiplying the term outside with each term inside. This simplifies the equation for further solving. Does that help?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I understand now."
+                },
+                {
+                    "turn": 6,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Great! After simplifying, combine like terms and solve for x = 6. Let me know if you'd like more explanation!"
+                }
+            ]
+        },
+        {
+            "variant_id": "5",
+            "description": "Nonlinear Flow",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 2(x + 4) + 3(x - 10) = 8."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, expand all the terms. Distribute the 2 and the 3. This gives: 2x + 8 + 3x - 30 = 8. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Can you explain that again?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Of course! Multiply 2 by x to get 2x and 2 by 4 to get 8. Similarly, multiply 3 by x to get 3x and 3 by -10 to get -30. Combine these terms to simplify: 2x + 8 + 3x - 30 = 8. Does that make sense now?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I understand now."
+                },
+                {
+                    "turn": 6,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Great! Combine like terms and solve for x = 6. Let me know if you have more questions!"
+                }
+            ]
+        },
+        {
+            "variant_id": "6",
+            "description": "Student Suggests an Incorrect Step",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 2(x + 4) + 3(x - 10) = 8."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, expand all the terms. This gives: 2x + 8 + 3x - 30 = 8. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Shouldn't we combine constants first?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Not quite. Combining constants before distributing terms wouldn't simplify the equation properly. It's better to expand and then combine like terms. Does that help?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I understand now."
+                },
+                {
+                    "turn": 6,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Great! After simplifying, combine like terms and solve for x = 6. Let me know if you'd like further clarification!"
+                }
+            ]
+        },
+        {
+            "variant_id": "7",
+            "description": "Multiple Explanations and Scaffolding",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 2(x + 4) + 3(x - 10) = 8."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, expand all the terms. This gives: 2x + 8 + 3x - 30 = 8. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "No, I don’t understand. Can you explain more?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Sure! Distribute the terms one by one. Multiply 2 by x to get 2x and 2 by 4 to get 8. Similarly, multiply 3 by x to get 3x and 3 by -10 to get -30. Combine these terms: 2x + 8 + 3x - 30 = 8. Does that make sense?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "I think so, but I’m still not sure."
+                },
+                {
+                    "turn": 6,
+                    "step": 2,
+                    "role": "system",
+                    "message": "Let’s continue step by step. Combine the x terms and the constant terms to get: 5x - 22 = 8. Solve for x = 6. Does this help?"
+                },
+                {
+                    "turn": 7,
+                    "step": 3,
+                    "role": "student",
+                    "message": "Yes, I get it now."
+                },
+                {
+                    "turn": 8,
+                    "step": 4,
+                    "role": "system",
+                    "message": "Great! The solution to 2(x + 4) + 3(x - 10) = 8 is x = 6. Would you like to try another one?"
+                }
+            ]
+        },
+        {
+            "variant_id": "8",
+            "description": "Student Solves Incorrectly but Tries Again",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 2(x + 4) + 3(x - 10) = 8."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, expand all the terms. This gives: 2x + 8 + 3x - 30 = 8. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Yes, I think I can solve it. 2x + 3x = 5x and 8 - 30 = -38."
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Not quite. Combine terms carefully: 2x + 3x = 5x and 8 - 30 = -22, not -38. The equation becomes: 5x - 22 = 8. Does this help?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I get it now. Thanks for explaining."
+                },
+                {
+                    "turn": 6,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Awesome! The solution to 2(x + 4) + 3(x - 10) = 8 is x = 6. Let me know if you'd like to try another one!"
+                }
+            ]
+        }
+    ]
