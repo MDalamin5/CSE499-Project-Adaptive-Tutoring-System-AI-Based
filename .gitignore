@@ -2,3 +2,6 @@ langchain/
 .env
 inference.ipynb
 model.py
+Test-Data
+.streamlit/
+app-langchain.py
