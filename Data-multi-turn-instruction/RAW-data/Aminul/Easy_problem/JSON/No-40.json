@@ -1,0 +1,51 @@
+{
+    "variants": [
+        {
+            "variant": 1,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Solve the following equation: x/2 = 1/3."},
+                {"turn": 2, "role": "system", "message": "To isolate x, multiply both sides by 2. That gives us x = 2/3. Do you understand this step?"},
+                {"turn": 3, "role": "student", "message": "Yes."},
+                {"turn": 4, "role": "system", "message": "Great! The final solution is x = 2/3. Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 2,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Solve the following equation: x/2 = 1/3."},
+                {"turn": 2, "role": "system", "message": "First, let's multiply both sides by 2. What does that give us?"},
+                {"turn": 3, "role": "student", "message": "x = 2/3."},
+                {"turn": 4, "role": "system", "message": "Correct! The solution to x/2 = 1/3 is x = 2/3. Would you like to try another equation?"}
+            ]
+        },
+        {
+            "variant": 3,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Solve the following equation: x/2 = 1/3."},
+                {"turn": 2, "role": "system", "message": "Think of x/2 as half of x being equal to 1/3. To find x, multiply both sides by 2, giving x = 2/3. Does this analogy help?"},
+                {"turn": 3, "role": "student", "message": "Yes, it does."},
+                {"turn": 4, "role": "system", "message": "Great! The final solution is x = 2/3. Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 4,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Solve the following equation: x/2 = 1/3."},
+                {"turn": 2, "role": "system", "message": "To solve for x, we need to cancel out the division by 2. What should we do?"},
+                {"turn": 3, "role": "student", "message": "Multiply by 2."},
+                {"turn": 4, "role": "system", "message": "Exactly! Multiplying both sides by 2 gives x = 2/3. Does that make sense?"},
+                {"turn": 5, "role": "student", "message": "Yes, I get it now."},
+                {"turn": 6, "role": "system", "message": "Great! The final solution is x = 2/3. Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 5,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Solve the following equation: x/2 = 1/3."},
+                {"turn": 2, "role": "system", "message": "Let's go step by step. What happens if we multiply both sides by 2?"},
+                {"turn": 3, "role": "student", "message": "We get x = 2/3."},
+                {"turn": 4, "role": "system", "message": "Correct! The final solution is x = 2/3. Would you like to solve another equation?"}
+            ]
+        }
+    ]
+}

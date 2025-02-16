@@ -1,0 +1,257 @@
+{
+    "problem": "Solve the equation: x/5 - 6 = -2.",
+    "variants": [
+        {
+            "variant_id": "1",
+            "description": "Direct Understanding",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "role": "student",
+                    "message": "Solve the equation: x/5 - 6 = -2."
+                },
+                {
+                    "turn": 2,
+                    "role": "system",
+                    "message": "First, add 6 to both sides of the equation to isolate the term with x. This gives: x/5 = -2 + 6, which simplifies to x/5 = 4. Do you understand this step?"
+                },
+                {
+                    "turn": 3,
+                    "role": "student",
+                    "message": "Yes."
+                },
+                {
+                    "turn": 4,
+                    "role": "system",
+                    "message": "Great! Next, multiply both sides by 5 to solve for x: x = 4 * 5, which simplifies to x = 20. Do you understand this step?"
+                },
+                {
+                    "turn": 5,
+                    "role": "student",
+                    "message": "Yes."
+                },
+                {
+                    "turn": 6,
+                    "role": "system",
+                    "message": "Fantastic! The solution to the equation is x = 20. Would you like to try another problem?"
+                }
+            ]
+        },
+        {
+            "variant_id": "2",
+            "description": "Hints for Factoring",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "role": "student",
+                    "message": "Solve the equation: x/5 - 6 = -2."
+                },
+                {
+                    "turn": 2,
+                    "role": "system",
+                    "message": "Start by isolating the term with x. Add 6 to both sides of the equation. Do you know what -2 + 6 equals?"
+                },
+                {
+                    "turn": 3,
+                    "role": "student",
+                    "message": "It's 4."
+                },
+                {
+                    "turn": 4,
+                    "role": "system",
+                    "message": "Correct! Now the equation becomes: x/5 = 4. Multiply both sides by 5 to solve for x. Does this make sense?"
+                },
+                {
+                    "turn": 5,
+                    "role": "student",
+                    "message": "Yes, it does."
+                },
+                {
+                    "turn": 6,
+                    "role": "system",
+                    "message": "Great! Solving gives x = 20. Would you like to try another similar problem?"
+                }
+            ]
+        },
+        {
+            "variant_id": "3",
+            "description": "Request for Alternative Method",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "role": "student",
+                    "message": "Solve the equation: x/5 - 6 = -2."
+                },
+                {
+                    "turn": 2,
+                    "role": "system",
+                    "message": "First, add 6 to both sides of the equation to isolate the term with x. This gives: x/5 = -2 + 6, which simplifies to x/5 = 4. Do you understand this step?"
+                },
+                {
+                    "turn": 3,
+                    "role": "student",
+                    "message": "Can you show me another way to solve this?"
+                },
+                {
+                    "turn": 4,
+                    "role": "system",
+                    "message": "Sure! Rearrange the equation so that all terms are on one side: x/5 - 6 + 2 = 0. This simplifies to x/5 - 4 = 0. Add 4 to both sides to get x/5 = 4, and then multiply by 5 to solve for x: x = 20. Does this alternative method make sense?"
+                },
+                {
+                    "turn": 5,
+                    "role": "student",
+                    "message": "Yes, it does now."
+                },
+                {
+                    "turn": 6,
+                    "role": "system",
+                    "message": "Great! Both methods lead to x = 20. Would you like further explanation?"
+                }
+            ]
+        },
+        {
+            "variant_id": "4",
+            "description": "Misunderstanding Concept of Roots",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "role": "student",
+                    "message": "Solve the equation: x/5 - 6 = -2."
+                },
+                {
+                    "turn": 2,
+                    "role": "system",
+                    "message": "Start by adding 6 to both sides of the equation to isolate the term with x. This gives: x/5 = -2 + 6, which simplifies to x/5 = 4. Do you understand this step?"
+                },
+                {
+                    "turn": 3,
+                    "role": "student",
+                    "message": "Why do we add 6 to both sides?"
+                },
+                {
+                    "turn": 4,
+                    "role": "system",
+                    "message": "Good question! Adding 6 to both sides eliminates the constant term on the left-hand side, leaving only the term with x/5. This simplifies the equation and allows us to solve for x. Does that explanation help?"
+                },
+                {
+                    "turn": 5,
+                    "role": "student",
+                    "message": "Yes, it makes sense now."
+                },
+                {
+                    "turn": 6,
+                    "role": "system",
+                    "message": "Great! Solving further gives x = 20. Would you like to try another problem?"
+                }
+            ]
+        },
+        {
+            "variant_id": "5",
+            "description": "Nonlinear Flow",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "role": "student",
+                    "message": "Solve the equation: x/5 - 6 = -2."
+                },
+                {
+                    "turn": 2,
+                    "role": "system",
+                    "message": "Add 6 to both sides of the equation to isolate the term with x. This gives: x/5 = -2 + 6, which simplifies to x/5 = 4. Do you understand this step?"
+                },
+                {
+                    "turn": 3,
+                    "role": "student",
+                    "message": "Can we recheck how we got 4?"
+                },
+                {
+                    "turn": 4,
+                    "role": "system",
+                    "message": "Of course! Adding 6 to both sides means calculating -2 + 6, which equals 4. This simplifies the equation to x/5 = 4. Does this help clarify?"
+                },
+                {
+                    "turn": 5,
+                    "role": "student",
+                    "message": "Yes, I get it now."
+                },
+                {
+                    "turn": 6,
+                    "role": "system",
+                    "message": "Great! Multiplying both sides by 5 gives x = 20. Let’s continue."
+                }
+            ]
+        },
+        {
+            "variant_id": "6",
+            "description": "Student Suggests an Incorrect Step",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "role": "student",
+                    "message": "Solve the equation: x/5 - 6 = -2."
+                },
+                {
+                    "turn": 2,
+                    "role": "system",
+                    "message": "Add 6 to both sides to isolate the term with x. This gives: x/5 = -2 + 6, which simplifies to x/5 = 4. Do you understand this step?"
+                },
+                {
+                    "turn": 3,
+                    "role": "student",
+                    "message": "Should we divide both sides by 5 first?"
+                },
+                {
+                    "turn": 4,
+                    "role": "system",
+                    "message": "Not quite. Dividing by 5 would not simplify the equation correctly because the constant -6 would still remain. Instead, add 6 to both sides first to isolate x/5. From there, multiply both sides by 5 to solve for x. Does this make sense?"
+                },
+                {
+                    "turn": 5,
+                    "role": "student",
+                    "message": "Yes, it makes sense now."
+                },
+                {
+                    "turn": 6,
+                    "role": "system",
+                    "message": "Great! Solving gives x = 20. Would you like another problem?"
+                }
+            ]
+        },
+        {
+            "variant_id": "7",
+            "description": "Multiple Explanations and Scaffolding",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "role": "student",
+                    "message": "Solve the equation: x/5 - 6 = -2."
+                },
+                {
+                    "turn": 2,
+                    "role": "system",
+                    "message": "Add 6 to both sides to isolate the term with x. This gives: x/5 = -2 + 6, which simplifies to x/5 = 4. Do you understand this step?"
+                },
+                {
+                    "turn": 3,
+                    "role": "student",
+                    "message": "No, I don’t understand."
+                },
+                {
+                    "turn": 4,
+                    "role": "system",
+                    "message": "Let’s break it down. Adding 6 to both sides means eliminating the constant term on the left-hand side. Calculating -2 + 6 gives 4, so the equation becomes: x/5 = 4. Does this help?"
+                },
+                {
+                    "turn": 5,
+                    "role": "student",
+                    "message": "Yes, I understand now."
+                },
+                {
+                    "turn": 6,
+                    "role": "system",
+                    "message": "Great! Multiplying both sides by 5 gives x = 20. Would you like me to explain more?"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,368 @@
+[
+        {
+            "variant_id": "1",
+            "description": "Direct Understanding",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 10x - (2x + 3) = 21."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, simplify the parentheses. Distribute the negative sign across (2x + 3): -2x - 3. This gives: 10x - 2x - 3 = 21. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Yes."
+                },
+                {
+                    "turn": 4,
+                    "step": 2,
+                    "role": "system",
+                    "message": "Next, combine like terms on the left-hand side: 10x - 2x = 8x. The equation becomes: 8x - 3 = 21. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 5,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Now, add 3 to both sides: 8x = 24. Finally, divide by 8 to isolate x: x = 3. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 6,
+                    "step": 4,
+                    "role": "student",
+                    "message": "Yes."
+                },
+                {
+                    "turn": 7,
+                    "step": 5,
+                    "role": "system",
+                    "message": "Fantastic! The solution to 10x - (2x + 3) = 21 is x = 3. Would you like to try another problem?"
+                }
+            ]
+        },
+        {
+            "variant_id": "2",
+            "description": "Hints for Simplification",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 10x - (2x + 3) = 21."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, simplify the parentheses. Distribute the negative sign across (2x + 3): -2x - 3. This gives: 10x - 2x - 3 = 21. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Can you give me a hint?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Sure! When you subtract (2x + 3), think of it as distributing a -1: -1 * 2x = -2x and -1 * 3 = -3. This simplifies the left-hand side. Does that help?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I understand now."
+                },
+                {
+                    "turn": 6,
+                    "step": 2,
+                    "role": "system",
+                    "message": "Great! Combine like terms: 10x - 2x = 8x. Subtract 3 from both sides to get 8x - 3 = 21. Then solve for x: x = 3. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 7,
+                    "step": 3,
+                    "role": "student",
+                    "message": "Yes."
+                },
+                {
+                    "turn": 8,
+                    "step": 4,
+                    "role": "system",
+                    "message": "Awesome! The solution to 10x - (2x + 3) = 21 is x = 3. Would you like to try another one?"
+                }
+            ]
+        },
+        {
+            "variant_id": "3",
+            "description": "Request for Alternative Method",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 10x - (2x + 3) = 21."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, simplify the parentheses. This gives: 10x - 2x - 3 = 21. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Can we solve this another way?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Sure! Instead of distributing the negative sign immediately, you could add (2x + 3) to both sides. Would you like to proceed this way?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I understand now."
+                },
+                {
+                    "turn": 6,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Great! Either way, the solution to the equation is x = 3. Let me know if you'd like further clarification."
+                }
+            ]
+        },
+        {
+            "variant_id": "4",
+            "description": "Misunderstanding Concept",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 10x - (2x + 3) = 21."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, simplify the parentheses. Distribute the negative sign across (2x + 3): -2x - 3. This gives: 10x - 2x - 3 = 21. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Why do we distribute the negative sign?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Good question! Distributing the negative sign removes the parentheses and simplifies the equation. Without this, we can't combine like terms. Does that help?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I understand now."
+                },
+                {
+                    "turn": 6,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Great! After simplifying, combine like terms and solve for x = 3. Let me know if you have more questions!"
+                }
+            ]
+        },
+        {
+            "variant_id": "5",
+            "description": "Nonlinear Flow",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 10x - (2x + 3) = 21."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, simplify the parentheses. Distribute the negative sign across (2x + 3): -2x - 3. This gives: 10x - 2x - 3 = 21. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Can you explain that again?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Of course! Subtracting (2x + 3) means distributing a negative sign. This becomes -2x - 3. Then, 10x - (2x + 3) simplifies to 10x - 2x - 3. Does that make sense now?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I understand now."
+                },
+                {
+                    "turn": 6,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Great! Combine like terms: 10x - 2x = 8x. Then solve for x = 3. Let me know if you have more questions!"
+                }
+            ]
+        },
+        {
+            "variant_id": "6",
+            "description": "Student Suggests an Incorrect Step",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 10x - (2x + 3) = 21."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, simplify the parentheses. This gives: 10x - 2x - 3 = 21. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Shouldn't we subtract 21 first?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Not quite. Subtracting 21 wouldn't simplify the left-hand side. Instead, we should distribute the negative sign first. Does that help?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I understand now."
+                },
+                {
+                    "turn": 6,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Great! After simplifying, combine like terms and solve for x = 3. Let me know if you'd like further clarification!"
+                }
+            ]
+        },
+        {
+            "variant_id": "7",
+            "description": "Multiple Explanations and Scaffolding",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 10x - (2x + 3) = 21."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, simplify the parentheses. This gives: 10x - 2x - 3 = 21. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "No, I don’t understand. Can you explain more?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Sure! Distribute the negative sign across (2x + 3). This becomes -2x - 3. Then the equation simplifies to 10x - 2x - 3 = 21. Does that make sense?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "I think so, but I’m still not sure."
+                },
+                {
+                    "turn": 6,
+                    "step": 2,
+                    "role": "system",
+                    "message": "Let’s continue step by step. Combine 10x - 2x to get 8x. Add 3 to both sides: 8x = 24. Then divide by 8 to find x = 3. Does this help?"
+                },
+                {
+                    "turn": 7,
+                    "step": 3,
+                    "role": "student",
+                    "message": "Yes, I get it now."
+                },
+                {
+                    "turn": 8,
+                    "step": 4,
+                    "role": "system",
+                    "message": "Great! The solution to 10x - (2x + 3) = 21 is x = 3. Would you like to try another one?"
+                }
+            ]
+        },
+        {
+            "variant_id": "8",
+            "description": "Student Solves Incorrectly but Tries Again",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 10x - (2x + 3) = 21."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, simplify the parentheses. This gives: 10x - 2x - 3 = 21. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Yes, I think I can solve it. 10x - 2x = 12x. Then 12x - 3 = 21."
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Not quite. Combining 10x - 2x gives 8x, not 12x. Add 3 to both sides: 8x = 24. Then divide by 8 to find x = 3. Does this help?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I get it now. Thanks for explaining."
+                },
+                {
+                    "turn": 6,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Awesome! The solution to 10x - (2x + 3) = 21 is x = 3. Let me know if you'd like to try another one!"
+                }
+            ]
+        }
+    ]

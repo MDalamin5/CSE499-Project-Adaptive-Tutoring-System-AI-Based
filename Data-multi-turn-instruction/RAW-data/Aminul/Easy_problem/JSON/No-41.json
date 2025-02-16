@@ -1,0 +1,55 @@
+{
+    "variants": [
+        {
+            "variant": 1,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Solve the following equation: 3x/2 = 5."},
+                {"turn": 2, "role": "system", "message": "To isolate x, multiply both sides by 2/3. This gives x = (5 * 2)/3, which simplifies to x = 10/3. Do you understand this step?"},
+                {"turn": 3, "role": "student", "message": "Yes."},
+                {"turn": 4, "role": "system", "message": "Great! The final solution is x = 10/3. Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 2,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Solve the following equation: 3x/2 = 5."},
+                {"turn": 2, "role": "system", "message": "To solve for x, first multiply both sides by 2 to eliminate the denominator. What does that give us?"},
+                {"turn": 3, "role": "student", "message": "3x = 10."},
+                {"turn": 4, "role": "system", "message": "Correct! Now, divide by 3 to isolate x."},
+                {"turn": 5, "role": "student", "message": "x = 10/3."},
+                {"turn": 6, "role": "system", "message": "Exactly! The solution to 3x/2 = 5 is x = 10/3. Would you like to try another equation?"}
+            ]
+        },
+        {
+            "variant": 3,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Solve the following equation: 3x/2 = 5."},
+                {"turn": 2, "role": "system", "message": "Imagine you have 3 times a number, and it's split into two equal parts, equaling 5. To find the number, first multiply both sides by 2, then divide by 3. That gives x = 10/3. Does this analogy help?"},
+                {"turn": 3, "role": "student", "message": "Yes, it does."},
+                {"turn": 4, "role": "system", "message": "Great! The final solution is x = 10/3. Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 4,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Solve the following equation: 3x/2 = 5."},
+                {"turn": 2, "role": "system", "message": "To solve for x, first multiply both sides by 2. Do you understand why we do this?"},
+                {"turn": 3, "role": "student", "message": "Not really."},
+                {"turn": 4, "role": "system", "message": "No problem! Since x is multiplied by 3 and then divided by 2, multiplying by 2 cancels out the division. Now, does it make sense?"},
+                {"turn": 5, "role": "student", "message": "Yes, I get it now."},
+                {"turn": 6, "role": "system", "message": "Great! The final solution is x = 10/3. Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 5,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Solve the following equation: 3x/2 = 5."},
+                {"turn": 2, "role": "system", "message": "Let's take it step by step. First, multiply both sides by 2. What does that give us?"},
+                {"turn": 3, "role": "student", "message": "3x = 10."},
+                {"turn": 4, "role": "system", "message": "Correct! Now, divide by 3 to isolate x."},
+                {"turn": 5, "role": "student", "message": "x = 10/3."},
+                {"turn": 6, "role": "system", "message": "Exactly! The final solution is x = 10/3. Would you like to solve another equation?"}
+            ]
+        }
+    ]
+}

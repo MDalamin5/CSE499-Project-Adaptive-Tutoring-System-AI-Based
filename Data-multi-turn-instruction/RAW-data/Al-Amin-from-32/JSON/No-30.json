@@ -1,0 +1,368 @@
+[
+        {
+            "variant_id": "1",
+            "description": "Direct Understanding",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 3x + 2(x - 5) = 15."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, expand the left-hand side. Distribute the 2 across (x - 5): 2 * x = 2x and 2 * -5 = -10. This gives: 3x + 2x - 10 = 15. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Yes."
+                },
+                {
+                    "turn": 4,
+                    "step": 2,
+                    "role": "system",
+                    "message": "Next, combine like terms on the left-hand side: 3x + 2x = 5x. The equation becomes: 5x - 10 = 15. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 5,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Now, add 10 to both sides: 5x = 25. Finally, divide by 5 to isolate x: x = 5. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 6,
+                    "step": 4,
+                    "role": "student",
+                    "message": "Yes."
+                },
+                {
+                    "turn": 7,
+                    "step": 5,
+                    "role": "system",
+                    "message": "Fantastic! The solution to 3x + 2(x - 5) = 15 is x = 5. Would you like to try another problem?"
+                }
+            ]
+        },
+        {
+            "variant_id": "2",
+            "description": "Hints for Simplification",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 3x + 2(x - 5) = 15."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, expand the left-hand side. Distribute the 2 across (x - 5): 2 * x = 2x and 2 * -5 = -10. This gives: 3x + 2x - 10 = 15. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Can you give me a hint?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Sure! To distribute, multiply the 2 by each term inside the parentheses. For example, 2 * x = 2x and 2 * -5 = -10. This simplifies the left-hand side. Does that help?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I understand now."
+                },
+                {
+                    "turn": 6,
+                    "step": 2,
+                    "role": "system",
+                    "message": "Great! Combine like terms: 3x + 2x = 5x. Subtract 10 from both sides to get 5x - 10 = 15. Then solve for x: x = 5. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 7,
+                    "step": 3,
+                    "role": "student",
+                    "message": "Yes."
+                },
+                {
+                    "turn": 8,
+                    "step": 4,
+                    "role": "system",
+                    "message": "Awesome! The solution to 3x + 2(x - 5) = 15 is x = 5. Would you like to try another one?"
+                }
+            ]
+        },
+        {
+            "variant_id": "3",
+            "description": "Request for Alternative Method",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 3x + 2(x - 5) = 15."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, expand the left-hand side. This gives: 3x + 2x - 10 = 15. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Can we solve this another way?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Sure! Instead of distributing first, you could subtract 2(x - 5) from both sides directly. Would you like to proceed with this method?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I understand now."
+                },
+                {
+                    "turn": 6,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Great! Either way, the solution to the equation is x = 5. Let me know if you'd like further clarification."
+                }
+            ]
+        },
+        {
+            "variant_id": "4",
+            "description": "Misunderstanding Concept",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 3x + 2(x - 5) = 15."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, expand the left-hand side. Distribute the 2 across (x - 5): 2 * x = 2x and 2 * -5 = -10. This gives: 3x + 2x - 10 = 15. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Why do we distribute the 2?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Good question! Distributing means removing the parentheses by multiplying the term outside with each term inside. This simplifies the equation for further solving. Does that help?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I understand now."
+                },
+                {
+                    "turn": 6,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Great! After simplifying, combine like terms and solve for x = 5. Let me know if you'd like more explanation!"
+                }
+            ]
+        },
+        {
+            "variant_id": "5",
+            "description": "Nonlinear Flow",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 3x + 2(x - 5) = 15."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, expand the left-hand side. Distribute the 2 across (x - 5): 2 * x = 2x and 2 * -5 = -10. This gives: 3x + 2x - 10 = 15. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Can you explain that again?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Sure! Distribute the 2 to both terms inside the parentheses. Multiply 2 by x to get 2x and 2 by -5 to get -10. Does that make sense now?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I understand now."
+                },
+                {
+                    "turn": 6,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Great! Combine like terms: 3x + 2x = 5x. Then solve for x = 5. Let me know if you have more questions!"
+                }
+            ]
+        },
+        {
+            "variant_id": "6",
+            "description": "Student Suggests an Incorrect Step",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 3x + 2(x - 5) = 15."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, expand the left-hand side. This gives: 3x + 2x - 10 = 15. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Shouldn't we subtract 15 first?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Not quite. Subtracting 15 wouldn't simplify the equation at this point. Instead, we should simplify the left-hand side first. Does that help?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I understand now."
+                },
+                {
+                    "turn": 6,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Great! After simplifying, combine like terms and solve for x = 5. Let me know if you need more help!"
+                }
+            ]
+        },
+        {
+            "variant_id": "7",
+            "description": "Multiple Explanations and Scaffolding",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 3x + 2(x - 5) = 15."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, expand the left-hand side. This gives: 3x + 2x - 10 = 15. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "No, I don’t understand. Can you explain more?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Sure! Distribute the 2 across (x - 5). Multiply 2 by x to get 2x and 2 by -5 to get -10. This simplifies to 3x + 2x - 10 = 15. Does that make sense?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "I think so, but I’m still not sure."
+                },
+                {
+                    "turn": 6,
+                    "step": 2,
+                    "role": "system",
+                    "message": "Let’s continue step by step. Combine 3x + 2x to get 5x. Add 10 to both sides: 5x = 25. Then divide by 5 to isolate x: x = 5. Does this help?"
+                },
+                {
+                    "turn": 7,
+                    "step": 3,
+                    "role": "student",
+                    "message": "Yes, I get it now."
+                },
+                {
+                    "turn": 8,
+                    "step": 4,
+                    "role": "system",
+                    "message": "Great! The solution to 3x + 2(x - 5) = 15 is x = 5. Would you like to try another one?"
+                }
+            ]
+        },
+        {
+            "variant_id": "8",
+            "description": "Student Solves Incorrectly but Tries Again",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 3x + 2(x - 5) = 15."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, expand the left-hand side. This gives: 3x + 2x - 10 = 15. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Yes, I think I can solve it. 3x + 2x = 5x, then 5x - 10 = 25."
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Not quite. Subtracting 10 correctly gives: 5x = 25. Then divide by 5 to find x = 5. Does that help?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I get it now. Thanks for explaining."
+                },
+                {
+                    "turn": 6,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Awesome! The solution to 3x + 2(x - 5) = 15 is x = 5. Let me know if you'd like to try another one!"
+                }
+            ]
+        }
+    ]

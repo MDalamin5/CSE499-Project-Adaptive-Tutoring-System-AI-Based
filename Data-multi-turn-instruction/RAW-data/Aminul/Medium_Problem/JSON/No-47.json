@@ -1,0 +1,66 @@
+{
+    "variants": [
+        {
+            "variant": 1,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Remove the brackets and simplify (y - 5)²."},
+                {"turn": 2, "role": "system", "message": "To simplify (y - 5)², expand it as (y - 5)(y - 5). Use the distributive property (FOIL method): Multiply y by y to get y², y by -5 to get -5y, -5 by y to get -5y, and -5 by -5 to get 25. Combine all the terms: y² - 5y - 5y + 25 simplifies to y² - 10y + 25. The simplified expression is: y² - 10y + 25. Do you understand this step?"},
+                {"turn": 3, "role": "student", "message": "Yes, I understood."},
+                {"turn": 4, "role": "system", "message": "Great! The final simplified expression is: y² - 10y + 25. Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 2,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Remove the brackets and simplify (y - 5)²."},
+                {"turn": 2, "role": "system", "message": "To simplify (y - 5)², expand it as (y - 5)(y - 5). Use the distributive property (FOIL method): Multiply y by y to get y², y by -5 to get -5y, -5 by y to get -5y, and -5 by -5 to get 25. Combine all the terms: y² - 5y - 5y + 25 simplifies to y² - 10y + 25. The simplified expression is: y² - 10y + 25. Do you understand this step?"},
+                {"turn": 3, "role": "student", "message": "Why do we multiply y and -5 twice?"},
+                {"turn": 4, "role": "system", "message": "Good question! When expanding (y - 5)(y - 5), we use the distributive property. Each term in the first bracket (y and -5) is multiplied by each term in the second bracket (y and -5). This ensures all possible products are included. Does that make sense?"},
+                {"turn": 5, "role": "student", "message": "Yes, it does."},
+                {"turn": 6, "role": "system", "message": "Great! The final simplified expression is: y² - 10y + 25. Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 3,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Remove the brackets and simplify (y - 5)²."},
+                {"turn": 2, "role": "system", "message": "Let’s expand (y - 5)² by writing it as (y - 5)(y - 5). First, multiply y by y to get y², then y by -5 to get -5y. Next, multiply -5 by y to get -5y, and -5 by -5 to get 25. Combine all the terms: y² - 5y - 5y + 25 simplifies to y² - 10y + 25. The simplified expression is: y² - 10y + 25. Does this approach make sense?"},
+                {"turn": 3, "role": "student", "message": "Yes, it helped."},
+                {"turn": 4, "role": "system", "message": "Great! Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 4,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Remove the brackets and simplify (y - 5)²."},
+                {"turn": 2, "role": "system", "message": "To simplify (y - 5)², expand it as (y - 5)(y - 5). Use the distributive property (FOIL method): Multiply y by y to get y², y by -5 to get -5y, -5 by y to get -5y, and -5 by -5 to get 25. Combine all the terms: y² - 5y - 5y + 25 simplifies to y² - 10y + 25. The simplified expression is: y² - 10y + 25. Do you understand this step?"},
+                {"turn": 3, "role": "student", "message": "Can you explain why we add -5y and -5y together?"},
+                {"turn": 4, "role": "system", "message": "Sure! When combining like terms, we add their coefficients. Here, -5y and -5y are like terms because they both have the variable y. Adding -5 and -5 gives -10, so -5y - 5y = -10y. Does that make sense?"},
+                {"turn": 5, "role": "student", "message": "Yes, it does."},
+                {"turn": 6, "role": "system", "message": "Great! The final simplified expression is: y² - 10y + 25. Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 5,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Remove the brackets and simplify (y - 5)²."},
+                {"turn": 2, "role": "system", "message": "To simplify (y - 5)², expand it as (y - 5)(y - 5). Use the distributive property (FOIL method): Multiply y by y to get y², y by -5 to get -5y, -5 by y to get -5y, and -5 by -5 to get 25. Combine all the terms: y² - 5y - 5y + 25 simplifies to y² - 10y + 25. The simplified expression is: y² - 10y + 25. Do you understand this step?"},
+                {"turn": 3, "role": "student", "message": "Shouldn’t we just square y and -5 directly?"},
+                {"turn": 4, "role": "system", "message": "Not quite! Squaring (y - 5) means multiplying the entire expression by itself, not squaring each term individually. This ensures we account for the cross-product terms (like -5y). Does that make sense?"},
+                {"turn": 5, "role": "student", "message": "Oh, I see now."},
+                {"turn": 6, "role": "system", "message": "Great! The final simplified expression is: y² - 10y + 25. Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 6,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Remove the brackets and simplify (y - 5)²."},
+                {"turn": 2, "role": "system", "message": "To simplify (y - 5)², expand it as (y - 5)(y - 5). Use the distributive property. Do you know what y times y equals?"},
+                {"turn": 3, "role": "student", "message": "Not sure, can I get a hint?"},
+                {"turn": 4, "role": "system", "message": "Sure! Multiply y by y to get y². Next, multiply y by -5 to get -5y, then -5 by y to get -5y, and -5 by -5 to get 25. Combine all the terms: y² - 5y - 5y + 25 = y² - 10y + 25. The simplified expression is: y² - 10y + 25. Does that help?"},
+                {"turn": 5, "role": "student", "message": "Yes, it does."},
+                {"turn": 6, "role": "system", "message": "Great! The final simplified expression is: y² - 10y + 25. Would you like to try another problem?"}
+            ]
+        }
+    ]
+}

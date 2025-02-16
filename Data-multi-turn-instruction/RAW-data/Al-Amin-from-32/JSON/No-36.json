@@ -1,0 +1,368 @@
+[
+        {
+            "variant_id": "1",
+            "description": "Direct Understanding",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 7 - 2(x - 1) = 3(2x - 1) + 2."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, expand both terms. Distribute the -2 across (x - 1): -2 * x = -2x and -2 * -1 = 2. On the right-hand side, distribute the 3 across (2x - 1): 3 * 2x = 6x and 3 * -1 = -3. This gives: 7 - 2x + 2 = 6x - 3 + 2. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Yes."
+                },
+                {
+                    "turn": 4,
+                    "step": 2,
+                    "role": "system",
+                    "message": "Next, simplify both sides. On the left-hand side: 7 + 2 = 9, so it becomes 9 - 2x. On the right-hand side: -3 + 2 = -1, so it becomes 6x - 1. The equation is now: 9 - 2x = 6x - 1. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 5,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Now, move all terms involving x to one side and constants to the other. Add 2x to both sides: 9 = 8x - 1. Then, add 1 to both sides: 10 = 8x. Finally, divide by 8: x = 10/8, which simplifies to x = 5/4. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 6,
+                    "step": 4,
+                    "role": "student",
+                    "message": "Yes."
+                },
+                {
+                    "turn": 7,
+                    "step": 5,
+                    "role": "system",
+                    "message": "Fantastic! The solution to 7 - 2(x - 1) = 3(2x - 1) + 2 is x = 5/4. Would you like to try another problem?"
+                }
+            ]
+        },
+        {
+            "variant_id": "2",
+            "description": "Hints for Simplification",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 7 - 2(x - 1) = 3(2x - 1) + 2."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, expand both terms. Distribute the -2 across (x - 1) and the 3 across (2x - 1). This gives: 7 - 2x + 2 = 6x - 3 + 2. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Can you give me a hint?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Sure! When distributing, multiply the term outside the parentheses by each term inside. For example, -2 * x = -2x and -2 * -1 = 2. Similarly, 3 * 2x = 6x and 3 * -1 = -3. Does that help?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I understand now."
+                },
+                {
+                    "turn": 6,
+                    "step": 2,
+                    "role": "system",
+                    "message": "Great! Simplify both sides: 7 + 2 = 9 on the left and -3 + 2 = -1 on the right. The equation becomes: 9 - 2x = 6x - 1. Then solve for x: x = 5/4. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 7,
+                    "step": 3,
+                    "role": "student",
+                    "message": "Yes."
+                },
+                {
+                    "turn": 8,
+                    "step": 4,
+                    "role": "system",
+                    "message": "Awesome! The solution to 7 - 2(x - 1) = 3(2x - 1) + 2 is x = 5/4. Would you like to try another one?"
+                }
+            ]
+        },
+        {
+            "variant_id": "3",
+            "description": "Request for Alternative Method",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 7 - 2(x - 1) = 3(2x - 1) + 2."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, expand the terms on both sides. This gives: 7 - 2x + 2 = 6x - 3 + 2. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Can we solve this another way?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Sure! Instead of expanding immediately, you could combine constants on each side first. For example, simplify 7 - 2(x - 1) as 7 - 2 + 2x and solve step-by-step. Would you like to proceed this way?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I understand now."
+                },
+                {
+                    "turn": 6,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Great! Either way, the solution to the equation is x = 5/4. Let me know if you'd like further clarification."
+                }
+            ]
+        },
+        {
+            "variant_id": "4",
+            "description": "Misunderstanding Concept",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 7 - 2(x - 1) = 3(2x - 1) + 2."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, expand both terms. This gives: 7 - 2x + 2 = 6x - 3 + 2. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Why do we distribute the terms?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Good question! Distributing removes the parentheses by multiplying the term outside with each term inside. This simplifies the equation so we can combine like terms. Does that help?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I understand now."
+                },
+                {
+                    "turn": 6,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Great! After simplifying, combine like terms and solve for x = 5/4. Let me know if you'd like more explanation!"
+                }
+            ]
+        },
+        {
+            "variant_id": "5",
+            "description": "Nonlinear Flow",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 7 - 2(x - 1) = 3(2x - 1) + 2."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, expand both terms. Distribute the -2 and the 3: This gives: 7 - 2x + 2 = 6x - 3 + 2. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Can you explain that again?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Of course! When distributing, multiply the number outside the parentheses by each term inside. For example, -2 * x = -2x and -2 * -1 = 2. Similarly, 3 * 2x = 6x and 3 * -1 = -3. Combine these terms to simplify. Does that make sense now?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I understand now."
+                },
+                {
+                    "turn": 6,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Great! Combine like terms and solve for x = 5/4. Let me know if you have more questions!"
+                }
+            ]
+        },
+        {
+            "variant_id": "6",
+            "description": "Student Suggests an Incorrect Step",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 7 - 2(x - 1) = 3(2x - 1) + 2."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, expand both terms. This gives: 7 - 2x + 2 = 6x - 3 + 2. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Shouldn't we subtract 7 first?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Not quite. Subtracting 7 before simplifying the terms would make the equation harder to solve. It's better to expand and simplify first. Does that help?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I understand now."
+                },
+                {
+                    "turn": 6,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Great! After simplifying, combine like terms and solve for x = 5/4. Let me know if you'd like further clarification!"
+                }
+            ]
+        },
+        {
+            "variant_id": "7",
+            "description": "Multiple Explanations and Scaffolding",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 7 - 2(x - 1) = 3(2x - 1) + 2."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, expand both terms. This gives: 7 - 2x + 2 = 6x - 3 + 2. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "No, I don’t understand. Can you explain more?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Sure! When you subtract 2(x - 1), it’s like multiplying (x - 1) by -2. So, -2(x - 1) becomes -2x + 2. Similarly, 3(2x - 1) becomes 6x - 3. Combine these terms: 7 - 2x + 2 = 6x - 3 + 2. Does that make sense?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "I think so, but I’m still not sure."
+                },
+                {
+                    "turn": 6,
+                    "step": 2,
+                    "role": "system",
+                    "message": "Let’s continue step by step. Simplify both sides and solve for x = 5/4. Does this help?"
+                },
+                {
+                    "turn": 7,
+                    "step": 3,
+                    "role": "student",
+                    "message": "Yes, I get it now."
+                },
+                {
+                    "turn": 8,
+                    "step": 4,
+                    "role": "system",
+                    "message": "Great! The solution to 7 - 2(x - 1) = 3(2x - 1) + 2 is x = 5/4. Would you like to try another one?"
+                }
+            ]
+        },
+        {
+            "variant_id": "8",
+            "description": "Student Solves Incorrectly but Tries Again",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 7 - 2(x - 1) = 3(2x - 1) + 2."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, expand both terms. This gives: 7 - 2x + 2 = 6x - 3 + 2. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Yes, I think I can solve it. 7 - 2x + 2 = 6x - 1."
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Not quite. Combine terms carefully: 7 + 2 = 9, so the left-hand side is 9 - 2x. The right-hand side simplifies to 6x - 1. Does this help?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I get it now. Thanks for explaining."
+                },
+                {
+                    "turn": 6,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Awesome! The solution to 7 - 2(x - 1) = 3(2x - 1) + 2 is x = 5/4. Let me know if you'd like to try another one!"
+                }
+            ]
+        }
+    ]

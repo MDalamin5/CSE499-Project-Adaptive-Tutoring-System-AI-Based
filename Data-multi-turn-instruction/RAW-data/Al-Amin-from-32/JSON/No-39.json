@@ -1,0 +1,368 @@
+[
+        {
+            "variant_id": "1",
+            "description": "Direct Understanding",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 7(2x - 4) + 3(5 - 3x) = 2."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, expand all the terms. Distribute the 7 across (2x - 4): 7 * 2x = 14x and 7 * -4 = -28. Distribute the 3 across (5 - 3x): 3 * 5 = 15 and 3 * -3x = -9x. This gives: 14x - 28 + 15 - 9x = 2. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Yes."
+                },
+                {
+                    "turn": 4,
+                    "step": 2,
+                    "role": "system",
+                    "message": "Next, combine like terms on the left-hand side. Combine the x terms: 14x - 9x = 5x. Combine the constant terms: -28 + 15 = -13. The equation becomes: 5x - 13 = 2. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 5,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Now, solve for x. Add 13 to both sides: 5x = 15. Then divide by 5: x = 15 / 5 = 3. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 6,
+                    "step": 4,
+                    "role": "student",
+                    "message": "Yes."
+                },
+                {
+                    "turn": 7,
+                    "step": 5,
+                    "role": "system",
+                    "message": "Fantastic! The solution to 7(2x - 4) + 3(5 - 3x) = 2 is x = 3. Would you like to try another problem?"
+                }
+            ]
+        },
+        {
+            "variant_id": "2",
+            "description": "Hints for Simplification",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 7(2x - 4) + 3(5 - 3x) = 2."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, expand all the terms. Distribute the 7 across (2x - 4) and the 3 across (5 - 3x). This gives: 14x - 28 + 15 - 9x = 2. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Can you give me a hint?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Sure! To distribute, multiply the number outside the parentheses by each term inside. For example, 7 * 2x = 14x and 7 * -4 = -28. Similarly, 3 * 5 = 15 and 3 * -3x = -9x. Does that help?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I understand now."
+                },
+                {
+                    "turn": 6,
+                    "step": 2,
+                    "role": "system",
+                    "message": "Great! Combine like terms: 14x - 9x = 5x and -28 + 15 = -13. The equation becomes: 5x - 13 = 2. Then solve for x: x = 3. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 7,
+                    "step": 3,
+                    "role": "student",
+                    "message": "Yes."
+                },
+                {
+                    "turn": 8,
+                    "step": 4,
+                    "role": "system",
+                    "message": "Awesome! The solution to 7(2x - 4) + 3(5 - 3x) = 2 is x = 3. Would you like to try another one?"
+                }
+            ]
+        },
+        {
+            "variant_id": "3",
+            "description": "Request for Alternative Method",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 7(2x - 4) + 3(5 - 3x) = 2."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, expand all the terms. This gives: 14x - 28 + 15 - 9x = 2. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Can we solve this another way?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Sure! Instead of expanding immediately, you could combine constants or simplify smaller sections of the equation step by step. Would you like to proceed this way?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I understand now."
+                },
+                {
+                    "turn": 6,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Great! Either way, the solution to the equation is x = 3. Let me know if you'd like further clarification."
+                }
+            ]
+        },
+        {
+            "variant_id": "4",
+            "description": "Misunderstanding Concept",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 7(2x - 4) + 3(5 - 3x) = 2."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, expand all the terms. This gives: 14x - 28 + 15 - 9x = 2. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Why do we distribute the terms?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Good question! Distributing removes the parentheses by multiplying the term outside with each term inside. This simplifies the equation for further solving. Does that help?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I understand now."
+                },
+                {
+                    "turn": 6,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Great! After simplifying, combine like terms and solve for x = 3. Let me know if you'd like more explanation!"
+                }
+            ]
+        },
+        {
+            "variant_id": "5",
+            "description": "Nonlinear Flow",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 7(2x - 4) + 3(5 - 3x) = 2."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, expand all the terms. Distribute the 7 and the 3. This gives: 14x - 28 + 15 - 9x = 2. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Can you explain that again?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Of course! Multiply 7 by 2x to get 14x and 7 by -4 to get -28. Similarly, multiply 3 by 5 to get 15 and 3 by -3x to get -9x. Combine these terms to simplify: 14x - 28 + 15 - 9x = 2. Does that make sense now?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I understand now."
+                },
+                {
+                    "turn": 6,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Great! Combine like terms and solve for x = 3. Let me know if you have more questions!"
+                }
+            ]
+        },
+        {
+            "variant_id": "6",
+            "description": "Student Suggests an Incorrect Step",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 7(2x - 4) + 3(5 - 3x) = 2."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, expand all the terms. This gives: 14x - 28 + 15 - 9x = 2. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Shouldn't we combine constants first?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Not quite. Combining constants before distributing terms wouldn't simplify the equation properly. It's better to expand and then combine like terms. Does that help?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I understand now."
+                },
+                {
+                    "turn": 6,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Great! After simplifying, combine like terms and solve for x = 3. Let me know if you'd like further clarification!"
+                }
+            ]
+        },
+        {
+            "variant_id": "7",
+            "description": "Multiple Explanations and Scaffolding",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 7(2x - 4) + 3(5 - 3x) = 2."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, expand all the terms. This gives: 14x - 28 + 15 - 9x = 2. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "No, I don’t understand. Can you explain more?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Sure! Distribute the terms one by one. Multiply 7 by 2x to get 14x and 7 by -4 to get -28. Similarly, multiply 3 by 5 to get 15 and 3 by -3x to get -9x. Combine these terms to simplify: 14x - 28 + 15 - 9x = 2. Does that make sense?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "I think so, but I’m still not sure."
+                },
+                {
+                    "turn": 6,
+                    "step": 2,
+                    "role": "system",
+                    "message": "Let’s continue step by step. Combine the x terms and the constant terms to get: 5x - 13 = 2. Solve for x = 3. Does this help?"
+                },
+                {
+                    "turn": 7,
+                    "step": 3,
+                    "role": "student",
+                    "message": "Yes, I get it now."
+                },
+                {
+                    "turn": 8,
+                    "step": 4,
+                    "role": "system",
+                    "message": "Great! The solution to 7(2x - 4) + 3(5 - 3x) = 2 is x = 3. Would you like to try another one?"
+                }
+            ]
+        },
+        {
+            "variant_id": "8",
+            "description": "Student Solves Incorrectly but Tries Again",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: 7(2x - 4) + 3(5 - 3x) = 2."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, expand all the terms. This gives: 14x - 28 + 15 - 9x = 2. Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Yes, I think I can solve it. 14x - 9x = 5x, and -28 + 15 = -43."
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Not quite. Combine terms carefully: 14x - 9x = 5x and -28 + 15 = -13, not -43. The equation becomes: 5x - 13 = 2. Does this help?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I get it now. Thanks for explaining."
+                },
+                {
+                    "turn": 6,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Awesome! The solution to 7(2x - 4) + 3(5 - 3x) = 2 is x = 3. Let me know if you'd like to try another one!"
+                }
+            ]
+        }
+    ]

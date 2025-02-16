@@ -1,0 +1,57 @@
+{
+    "variants": [
+        {
+            "variant": 1,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Simplify as much as possible 7 + 3(x-1)."},
+                {"turn": 2, "role": "system", "message": "First, distribute 3 across (x-1). This gives 7 + 3x - 3. Now, combine like terms: 7 - 3 simplifies to 4, so the final expression is 3x + 4. Do you understand this step?"},
+                {"turn": 3, "role": "student", "message": "Yes."},
+                {"turn": 4, "role": "system", "message": "Great! The final simplified expression is 3x + 4. Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 2,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Simplify as much as possible 7 + 3(x-1)."},
+                {"turn": 2, "role": "system", "message": "First, we distribute 3 across (x-1). Do you see what terms need to be combined?"},
+                {"turn": 3, "role": "student", "message": "No, I don’t."},
+                {"turn": 4, "role": "system", "message": "Look at the terms: 7 and -3 are constants, so we can combine them. Also, 3x remains unchanged. 7 - 3 = 4, so the simplified expression is 3x + 4. Does that make sense?"},
+                {"turn": 5, "role": "student", "message": "Yes, it does."},
+                {"turn": 6, "role": "system", "message": "Great! The final simplified expression is 3x + 4. Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 3,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Simplify as much as possible 7 + 3(x-1)."},
+                {"turn": 2, "role": "system", "message": "Imagine you have 7 dollars, and then you need to subtract 3 dollars but also gain 3 times 'x' dollars. How much do you have left?"},
+                {"turn": 3, "role": "student", "message": "4 dollars plus 3x."},
+                {"turn": 4, "role": "system", "message": "Exactly! Similarly, 7 - 3 simplifies to 4, and we keep 3x. The final expression is 3x + 4. Does this analogy help?"},
+                {"turn": 5, "role": "student", "message": "Yes, it does."},
+                {"turn": 6, "role": "system", "message": "Great! The final simplified expression is 3x + 4. Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 4,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Simplify as much as possible 7 + 3(x-1)."},
+                {"turn": 2, "role": "system", "message": "First, distribute 3 across (x-1). This gives 7 + 3x - 3. Now, combine like terms: 7 - 3 simplifies to 4, so the final expression is 3x + 4. Do you understand this step?"},
+                {"turn": 3, "role": "student", "message": "Can you explain why we distribute 3?"},
+                {"turn": 4, "role": "system", "message": "Sure! When you have a number outside parentheses, you multiply it by each term inside. That’s why 3 is multiplied by both x and -1. So, 3(x-1) becomes 3x - 3. Does that make sense?"},
+                {"turn": 5, "role": "student", "message": "Yes, it does."},
+                {"turn": 6, "role": "system", "message": "Great! The final simplified expression is 3x + 4. Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 5,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Simplify as much as possible 7 + 3(x-1)."},
+                {"turn": 2, "role": "system", "message": "First, let’s find the like terms in this expression. Can you tell me which terms can be combined?"},
+                {"turn": 3, "role": "student", "message": "7 and -3?"},
+                {"turn": 4, "role": "system", "message": "Exactly! Since both terms are constants, we subtract them: 7 - 3 = 4. The 3x remains as is. That means the simplified expression is 3x + 4. Does that answer your question?"},
+                {"turn": 5, "role": "student", "message": "Yes!"},
+                {"turn": 6, "role": "system", "message": "Great! The final simplified expression is 3x + 4. Would you like to try another problem?"}
+            ]
+        }
+    ]
+}

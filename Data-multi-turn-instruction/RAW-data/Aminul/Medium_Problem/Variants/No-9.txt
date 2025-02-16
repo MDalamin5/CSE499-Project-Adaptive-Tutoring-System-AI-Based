@@ -1,0 +1,161 @@
+### **Problem**: Simplify \( \frac{n}{4} - \frac{m}{3} - \frac{n}{2} + \frac{m}{3} \)
+
+
+#### **Variant 1 (Direct Understanding)**
+
+**Student**: Simplify \( \frac{n}{4} - \frac{m}{3} - \frac{n}{2} + \frac{m}{3} \).  
+**System**: Combine like terms. First, combine the \( \frac{m}{3} \)-terms:  
+\[
+\frac{-m}{3} + \frac{m}{3} = 0
+\]  
+Next, combine the \( \frac{n}{4} \)- and \( \frac{-n}{2} \)-terms. Rewrite \( \frac{-n}{2} \) with a denominator of 4:  
+\[
+\frac{-n}{2} = \frac{-2n}{4}
+\]  
+Now add \( \frac{n}{4} - \frac{2n}{4} \):  
+\[
+\frac{n}{4} - \frac{2n}{4} = \frac{-n}{4}
+\]  
+The simplified expression is:  
+\[
+\frac{-n}{4}
+\]  
+Do you understand this step?  
+**Student**: Yes, I understood.  
+**System**: Great! The final simplified expression is:
+\[
+\frac{-n}{4}
+\]  
+Would you like to try another problem?
+
+
+
+#### **Variant 2 (Clarification Needed for Addition/Subtraction)**
+
+**Student**: Simplify \( \frac{n}{4} - \frac{m}{3} - \frac{n}{2} + \frac{m}{3} \).  
+**System**: Combine like terms. First, combine the \( \frac{m}{3} \)-terms:  
+\[
+\frac{-m}{3} + \frac{m}{3} = 0
+\]  
+Next, combine the \( \frac{n}{4} \)- and \( \frac{-n}{2} \)-terms. Rewrite \( \frac{-n}{2} \) with a denominator of 4:  
+\[
+\frac{-n}{2} = \frac{-2n}{4}
+\]  
+Now add \( \frac{n}{4} - \frac{2n}{4} \):  
+\[
+\frac{n}{4} - \frac{2n}{4} = \frac{-n}{4}
+\]  
+The simplified expression is:  
+\[
+\frac{-n}{4}
+\]  
+Do you understand this step?  
+**Student**: Why do we rewrite \( \frac{-n}{2} \) as \( \frac{-2n}{4} \)?  
+**System**: Good question! To add or subtract fractions, they must have the same denominator. Since \( \frac{n}{4} \) has a denominator of 4, we rewrite \( \frac{-n}{2} \) with a denominator of 4 as \( \frac{-2n}{4} \). Does that make sense?  
+**Student**: Yes, it does.  
+**System**: Great! The final simplified expression is:  
+\[
+\frac{-n}{4}
+\]  
+Would you like to try another problem?
+
+
+#### **Variant 3 (Teaching through Analogy)**
+
+**Student**: Simplify \( \frac{n}{4} - \frac{m}{3} - \frac{n}{2} + \frac{m}{3} \).  
+**System**: Let’s break it down step by step. First, think of the fractions as parts of a group. For example, the \( \frac{m}{3} \)-terms cancel out:  
+\[
+\frac{-m}{3} + \frac{m}{3} = 0
+\]  
+Next, think of \( \frac{n}{4} - \frac{n}{2} \). Since they don’t have the same denominator, we rewrite \( \frac{-n}{2} \) as \( \frac{-2n}{4} \). This is like converting to the same unit of measurement before subtracting. Now, subtract:  
+\[
+\frac{n}{4} - \frac{2n}{4} = \frac{-n}{4}
+\]  
+The simplified expression is:  
+\[
+\frac{-n}{4}
+\]  
+Does that analogy help?  
+**Student**: Yes, it does.  
+**System**: Great! Would you like to try another problem?
+
+
+
+#### **Variant 4 (Nonlinear Flow)**
+
+**Student**: Simplify \( \frac{n}{4} - \frac{m}{3} - \frac{n}{2} + \frac{m}{3} \).  
+**System**: Combine like terms. First, combine the \( \frac{m}{3} \)-terms:  
+\[
+\frac{-m}{3} + \frac{m}{3} = 0
+\]  
+Next, combine the \( \frac{n}{4} \)- and \( \frac{-n}{2} \)-terms. Rewrite \( \frac{-n}{2} \) with a denominator of 4:  
+\[
+\frac{-n}{2} = \frac{-2n}{4}
+\]  
+Now add \( \frac{n}{4} - \frac{2n}{4} \):  
+\[
+\frac{n}{4} - \frac{2n}{4} = \frac{-n}{4}
+\]  
+The simplified expression is:  
+\[
+\frac{-n}{4}
+\]  
+Do you understand this step?  
+**Student**: Can you explain why the \( \frac{m}{3} \)-terms cancel out?  
+**System**: Sure! When you add \( \frac{-m}{3} \) and \( \frac{m}{3} \), their numerators (\(-m\) and \(m\)) add up to 0. That’s why they cancel out completely. Does that make sense now?  
+**Student**: Yes, it does.  
+**System**: Great! The final simplified expression is:  
+\[
+\frac{-n}{4}
+\]  
+Would you like to try another problem?
+
+
+
+#### **Variant 5 (Student Suggests an Incorrect Step)**
+
+**Student**: Simplify \( \frac{n}{4} - \frac{m}{3} - \frac{n}{2} + \frac{m}{3} \).  
+**System**: Combine like terms. First, combine the \( \frac{m}{3} \)-terms:  
+\[
+\frac{-m}{3} + \frac{m}{3} = 0
+\]  
+Next, combine the \( \frac{n}{4} \)- and \( \frac{-n}{2} \)-terms. Rewrite \( \frac{-n}{2} \) with a denominator of 4:  
+\[
+\frac{-n}{2} = \frac{-2n}{4}
+\]  
+Now add \( \frac{n}{4} - \frac{2n}{4} \):  
+\[
+\frac{n}{4} - \frac{2n}{4} = \frac{-n}{4}
+\]  
+The simplified expression is:  
+\[
+\frac{-n}{4}
+\]  
+Do you understand this step?  
+**Student**: Shouldn’t we combine \( \frac{-n}{2} \) with \( \frac{-m}{3} \)?  
+**System**: Not quite! The terms \( \frac{-n}{2} \) and \( \frac{-m}{3} \) cannot be combined because they don’t have the same variable or denominator. We only combine like terms. Does that make sense?  
+**Student**: Oh, I see now.  
+**System**: Great! The final simplified expression is:  
+\[
+\frac{-n}{4}
+\]  
+Would you like to try another problem?
+
+
+
+#### **Variant 6 (Request for Hint)**
+
+**Student**: Simplify \( \frac{n}{4} - \frac{m}{3} - \frac{n}{2} + \frac{m}{3} \).  
+**System**: Combine like terms. Do you know how to combine the \( \frac{m}{3} \)-terms?  
+**Student**: Not sure, can I get a hint?  
+**System**: Sure! Look at \( \frac{-m}{3} + \frac{m}{3} \). Since the denominators are the same, you just add the numerators: \(-m + m = 0\). This means the \( \frac{m}{3} \)-terms cancel out. Does that help?  
+**Student**: Yes, it does.  
+**System**: Great! Now combine \( \frac{n}{4} - \frac{n}{2} \). Rewrite \( \frac{-n}{2} \) as \( \frac{-2n}{4} \) so they have the same denominator. Then subtract:  
+\[
+\frac{n}{4} - \frac{2n}{4} = \frac{-n}{4}
+\]  
+The final simplified expression is:  
+\[
+\frac{-n}{4}
+\]  
+Would you like to try another problem?

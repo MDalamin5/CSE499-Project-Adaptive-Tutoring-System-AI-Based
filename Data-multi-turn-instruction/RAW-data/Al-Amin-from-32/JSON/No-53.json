@@ -1,0 +1,506 @@
+[
+        {
+            "variant_id": "1",
+            "description": "Direct Understanding",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: (6 - x) - (x - 5) - (4 - x) = -x/2."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, simplify the left-hand side by distributing the negative signs. For ( (6 - x) ), it stays the same: ( 6 - x ). For ( -(x - 5) ), distribute the negative sign to get ( -x + 5 ). For ( -(4 - x) ), distribute the negative sign to get ( -4 + x ). The equation becomes: ( 6 - x - x + 5 - 4 + x = -x/2 ). Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Yes, I understand."
+                },
+                {
+                    "turn": 4,
+                    "step": 2,
+                    "role": "system",
+                    "message": "Next, combine like terms on the left-hand side. Combine ( -x - x + x ): this simplifies to ( -x ). Combine the constants ( 6 + 5 - 4 ): this simplifies to ( 7 ). The equation becomes: ( 7 - x = -x/2 ). Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 5,
+                    "step": 3,
+                    "role": "student",
+                    "message": "Yes."
+                },
+                {
+                    "turn": 6,
+                    "step": 4,
+                    "role": "system",
+                    "message": "Now, move all terms involving ( x ) to one side. Add ( x ) to both sides: ( 7 = -x/2 + x ). Simplify ( -x/2 + x ) to ( x/2 ). The equation becomes: ( 7 = x/2 ). Do you follow so far?"
+                },
+                {
+                    "turn": 7,
+                    "step": 5,
+                    "role": "student",
+                    "message": "Yes, I do."
+                },
+                {
+                    "turn": 8,
+                    "step": 6,
+                    "role": "system",
+                    "message": "Finally, solve for ( x ) by multiplying both sides by 2: ( x = 14 ). The solution is ( x = 14 ). Would you like to try another equation?"
+                }
+            ]
+        },
+        {
+            "variant_id": "2",
+            "description": "Hints for Simplification",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: (6 - x) - (x - 5) - (4 - x) = -x/2."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, simplify the left-hand side by distributing the negative signs. For ( (6 - x) ), it stays the same: ( 6 - x ). For ( -(x - 5) ), distribute the negative sign to get ( -x + 5 ). For ( -(4 - x) ), distribute the negative sign to get ( -4 + x ). The equation becomes: ( 6 - x - x + 5 - 4 + x = -x/2 ). Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "I need a hint to understand the distribution part."
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Sure! When distributing a negative sign, multiply each term in the parentheses by -1. For ( -(x - 5) ), distribute ( -1 * x = -x ) and ( -1 * -5 = +5 ). For ( -(4 - x) ), distribute ( -1 * 4 = -4 ) and ( -1 * -x = +x ). Does that help?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I understand now."
+                },
+                {
+                    "turn": 6,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Great! Combine like terms: ( -x - x + x = -x ) and ( 6 + 5 - 4 = 7 ). The equation becomes: ( 7 - x = -x/2 ). Do you follow this part?"
+                },
+                {
+                    "turn": 7,
+                    "step": 4,
+                    "role": "student",
+                    "message": "Yes, I do."
+                },
+                {
+                    "turn": 8,
+                    "step": 5,
+                    "role": "system",
+                    "message": "Now, move all ( x )-terms to one side. Add ( x ) to both sides: ( 7 = -x/2 + x ). Simplify ( -x/2 + x = x/2 ). The equation becomes: ( 7 = x/2 ). Finally, multiply both sides by 2 to solve for ( x ): ( x = 14 ). Does this make sense?"
+                },
+                {
+                    "turn": 9,
+                    "step": 6,
+                    "role": "student",
+                    "message": "Yes, it does now. Thank you!"
+                },
+                {
+                    "turn": 10,
+                    "step": 7,
+                    "role": "system",
+                    "message": "You’re welcome! Great work. Let me know if you’d like to try another problem."
+                }
+            ]
+        },
+        {
+            "variant_id": "3",
+            "description": "Request for Alternative Method",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: (6 - x) - (x - 5) - (4 - x) = -x/2."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, simplify the left-hand side by distributing the negative signs. This gives: ( 6 - x - x + 5 - 4 + x = -x/2 ). Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Is there another way to solve this without distributing first?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Good question! Distributing first simplifies combining like terms. Without distributing, solving the equation step by step becomes tricky. Would you like to continue with distribution first?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, let’s do that."
+                },
+                {
+                    "turn": 6,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Great! After distributing, combine like terms: ( -x - x + x = -x ) and ( 6 + 5 - 4 = 7 ). The equation becomes: ( 7 - x = -x/2 ). Do you follow this part?"
+                },
+                {
+                    "turn": 7,
+                    "step": 4,
+                    "role": "student",
+                    "message": "Yes, I do."
+                },
+                {
+                    "turn": 8,
+                    "step": 5,
+                    "role": "system",
+                    "message": "Now, add ( x ) to both sides: ( 7 = -x/2 + x ), which simplifies to ( 7 = x/2 ). Finally, multiply both sides by 2: ( x = 14 ). Does this make sense?"
+                },
+                {
+                    "turn": 9,
+                    "step": 6,
+                    "role": "student",
+                    "message": "Yes, it does. Thank you!"
+                },
+                {
+                    "turn": 10,
+                    "step": 7,
+                    "role": "system",
+                    "message": "You’re welcome! Let me know if you’d like to try a different method or problem."
+                }
+            ]
+        },
+        {
+            "variant_id": "4",
+            "description": "Misunderstanding Concept",
+            "conversation": [
+                {
+                    "turn": 1,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Solve the equation: (6 - x) - (x - 5) - (4 - x) = -x/2."
+                },
+                {
+                    "turn": 2,
+                    "step": 1,
+                    "role": "system",
+                    "message": "First, simplify the left-hand side by distributing the negative signs. This gives: ( 6 - x - x + 5 - 4 + x = -x/2 ). Do you understand this step? (Yes/No/Explain More)"
+                },
+                {
+                    "turn": 3,
+                    "step": 1,
+                    "role": "student",
+                    "message": "Why do we need to distribute first?"
+                },
+                {
+                    "turn": 4,
+                    "step": 1,
+                    "role": "system",
+                    "message": "Good question! Distributing removes the parentheses, which helps us combine like terms. This is a common approach to simplify equations. Does that explanation help?"
+                },
+                {
+                    "turn": 5,
+                    "step": 2,
+                    "role": "student",
+                    "message": "Yes, I see why it’s important now."
+                },
+                {
+                    "turn": 6,
+                    "step": 3,
+                    "role": "system",
+                    "message": "Great! After distributing, combine like terms: ( -x - x + x = -x ) and ( 6 + 5 - 4 = 7 ). The equation becomes: ( 7 - x = -x/2 ). Do you follow this part?"
+                },
+                {
+                    "turn": 7,
+                    "step": 4,
+                    "role": "student",
+                    "message": "Yes, let’s keep going."
+                },
+                {
+                    "turn": 8,
+                    "step": 5,
+                    "role": "system",
+                    "message": "Now, add ( x ) to both sides: ( 7 = -x/2 + x ), which simplifies to ( 7 = x/2 ). Finally, multiply both sides by 2 to solve for ( x ): ( x = 14 ). Does this make sense?"
+                },
+                {
+                    "turn": 9,
+                    "step": 6,
+                    "role": "student",
+                    "message": "Yes, it does now. Thanks for clarifying!"
+                },
+                {
+                    "turn": 10,
+                    "step": 7,
+                    "role": "system",
+                    "message": "You’re welcome! Great work. Let me know if you’d like to try another problem."
+                }
+            ]
+        },
+                {
+                    "variant_id": "5",
+                    "description": "Nonlinear Flow",
+                    "conversation": [
+                        {
+                            "turn": 1,
+                            "step": 1,
+                            "role": "student",
+                            "message": "Solve the equation: (6 - x) - (x - 5) - (4 - x) = -x/2."
+                        },
+                        {
+                            "turn": 2,
+                            "step": 1,
+                            "role": "system",
+                            "message": "First, simplify the left-hand side by distributing the negative signs. This gives: ( 6 - x - x + 5 - 4 + x = -x/2 ). Do you understand this step? (Yes/No/Explain More)"
+                        },
+                        {
+                            "turn": 3,
+                            "step": 1,
+                            "role": "student",
+                            "message": "Can you go over how ( -(x - 5) ) is distributed again?"
+                        },
+                        {
+                            "turn": 4,
+                            "step": 1,
+                            "role": "system",
+                            "message": "Sure! When distributing ( -(x - 5) ), multiply ( -1 ) by each term inside the parentheses: ( -1 * x = -x ) and ( -1 * -5 = +5 ). Does this make sense?"
+                        },
+                        {
+                            "turn": 5,
+                            "step": 2,
+                            "role": "student",
+                            "message": "Yes, that’s clear now."
+                        },
+                        {
+                            "turn": 6,
+                            "step": 3,
+                            "role": "system",
+                            "message": "Great! After distributing all terms, the equation becomes: ( 6 - x - x + 5 - 4 + x = -x/2 ). Combine like terms: ( -x - x + x = -x ) and ( 6 + 5 - 4 = 7 ). The equation simplifies to: ( 7 - x = -x/2 ). Are you following so far?"
+                        },
+                        {
+                            "turn": 7,
+                            "step": 4,
+                            "role": "student",
+                            "message": "Yes, I understand."
+                        },
+                        {
+                            "turn": 8,
+                            "step": 5,
+                            "role": "system",
+                            "message": "Now, add ( x ) to both sides: ( 7 = -x/2 + x ). Simplify ( -x/2 + x ) to ( x/2 ). The equation becomes: ( 7 = x/2 ). Does that make sense?"
+                        },
+                        {
+                            "turn": 9,
+                            "step": 6,
+                            "role": "student",
+                            "message": "Yes, that’s clear."
+                        },
+                        {
+                            "turn": 10,
+                            "step": 7,
+                            "role": "system",
+                            "message": "Finally, multiply both sides by 2 to solve for ( x ): ( x = 14 ). The solution is ( x = 14 ). Great job working through this! Let me know if you want to try another equation."
+                        }
+                    ]
+                },
+                {
+                    "variant_id": "6",
+                    "description": "Student Suggests an Incorrect Step",
+                    "conversation": [
+                        {
+                            "turn": 1,
+                            "step": 1,
+                            "role": "student",
+                            "message": "Solve the equation: (6 - x) - (x - 5) - (4 - x) = -x/2."
+                        },
+                        {
+                            "turn": 2,
+                            "step": 1,
+                            "role": "system",
+                            "message": "First, simplify the left-hand side by distributing the negative signs. This gives: ( 6 - x - x + 5 - 4 + x = -x/2 ). Do you understand this step? (Yes/No/Explain More)"
+                        },
+                        {
+                            "turn": 3,
+                            "step": 1,
+                            "role": "student",
+                            "message": "Shouldn’t we divide everything by 2 first?"
+                        },
+                        {
+                            "turn": 4,
+                            "step": 1,
+                            "role": "system",
+                            "message": "That’s an interesting idea! However, dividing by 2 at this stage wouldn’t simplify the left-hand side because it’s still in parentheses. Distributing and combining like terms first is the best approach. Shall we proceed with that?"
+                        },
+                        {
+                            "turn": 5,
+                            "step": 2,
+                            "role": "student",
+                            "message": "Okay, let’s distribute first."
+                        },
+                        {
+                            "turn": 6,
+                            "step": 3,
+                            "role": "system",
+                            "message": "Great! After distributing and combining like terms, the equation simplifies to: ( 7 - x = -x/2 ). Are you following so far?"
+                        },
+                        {
+                            "turn": 7,
+                            "step": 4,
+                            "role": "student",
+                            "message": "Yes, I understand now."
+                        },
+                        {
+                            "turn": 8,
+                            "step": 5,
+                            "role": "system",
+                            "message": "Now, add ( x ) to both sides: ( 7 = -x/2 + x ). Simplify ( -x/2 + x ) to ( x/2 ). The equation becomes: ( 7 = x/2 ). Finally, multiply both sides by 2: ( x = 14 ). Does this make sense?"
+                        },
+                        {
+                            "turn": 9,
+                            "step": 6,
+                            "role": "student",
+                            "message": "Yes, it does now. Thanks for explaining!"
+                        },
+                        {
+                            "turn": 10,
+                            "step": 7,
+                            "role": "system",
+                            "message": "You’re welcome! Great job! Let me know if you’d like to try another problem."
+                        }
+                    ]
+                },
+                {
+                    "variant_id": "7",
+                    "description": "Multiple Explanations and Scaffolding",
+                    "conversation": [
+                        {
+                            "turn": 1,
+                            "step": 1,
+                            "role": "student",
+                            "message": "Solve the equation: (6 - x) - (x - 5) - (4 - x) = -x/2."
+                        },
+                        {
+                            "turn": 2,
+                            "step": 1,
+                            "role": "system",
+                            "message": "First, simplify the left-hand side by distributing the negative signs. This gives: ( 6 - x - x + 5 - 4 + x = -x/2 ). Do you understand this step? (Yes/No/Explain More)"
+                        },
+                        {
+                            "turn": 3,
+                            "step": 1,
+                            "role": "student",
+                            "message": "I don’t get how you distributed ( -(4 - x) )."
+                        },
+                        {
+                            "turn": 4,
+                            "step": 1,
+                            "role": "system",
+                            "message": "No problem! For ( -(4 - x) ), multiply ( -1 ) by each term: ( -1 * 4 = -4 ) and ( -1 * -x = +x ). Does that help?"
+                        },
+                        {
+                            "turn": 5,
+                            "step": 2,
+                            "role": "student",
+                            "message": "Yes, that helps."
+                        },
+                        {
+                            "turn": 6,
+                            "step": 3,
+                            "role": "system",
+                            "message": "Great! After distributing, combine like terms: ( -x - x + x = -x ) and ( 6 + 5 - 4 = 7 ). The equation becomes: ( 7 - x = -x/2 ). Are you ready to proceed?"
+                        },
+                        {
+                            "turn": 7,
+                            "step": 4,
+                            "role": "student",
+                            "message": "Yes, let’s move on."
+                        },
+                        {
+                            "turn": 8,
+                            "step": 5,
+                            "role": "system",
+                            "message": "Now, add ( x ) to both sides: ( 7 = -x/2 + x ). Simplify ( -x/2 + x ) to ( x/2 ). The equation becomes: ( 7 = x/2 ). Finally, multiply both sides by 2 to solve for ( x ): ( x = 14 ). Does that make sense now?"
+                        },
+                        {
+                            "turn": 9,
+                            "step": 6,
+                            "role": "student",
+                            "message": "Yes, I get it now. Thanks for breaking it down!"
+                        },
+                        {
+                            "turn": 10,
+                            "step": 7,
+                            "role": "system",
+                            "message": "You’re welcome! Great work! Let me know if you’d like to practice another equation."
+                        }
+                    ]
+                },
+                {
+                    "variant_id": "8",
+                    "description": "Student Solves Incorrectly but Tries Again",
+                    "conversation": [
+                        {
+                            "turn": 1,
+                            "step": 1,
+                            "role": "student",
+                            "message": "Solve the equation: (6 - x) - (x - 5) - (4 - x) = -x/2."
+                        },
+                        {
+                            "turn": 2,
+                            "step": 1,
+                            "role": "system",
+                            "message": "First, simplify the left-hand side by distributing the negative signs. This gives: ( 6 - x - x + 5 - 4 + x = -x/2 ). Do you understand this step? (Yes/No/Explain More)"
+                        },
+                        {
+                            "turn": 3,
+                            "step": 1,
+                            "role": "student",
+                            "message": "I think the left side simplifies to ( 7 + x )."
+                        },
+                        {
+                            "turn": 4,
+                            "step": 2,
+                            "role": "system",
+                            "message": "Close, but not quite. Combine ( -x - x + x = -x ), not ( +x ). The correct simplification is: ( 7 - x = -x/2 ). Does that help clarify?"
+                        },
+                        {
+                            "turn": 5,
+                            "step": 3,
+                            "role": "student",
+                            "message": "Oh, I see now. Yes, that makes sense."
+                        },
+                        {
+                            "turn": 6,
+                            "step": 4,
+                            "role": "system",
+                            "message": "Great! Now, add ( x ) to both sides: ( 7 = -x/2 + x ). Simplify ( -x/2 + x ) to ( x/2 ). The equation becomes: ( 7 = x/2 ). Are you ready for the final step?"
+                        },
+                        {
+                            "turn": 7,
+                            "step": 5,
+                            "role": "student",
+                            "message": "Yes, let’s finish."
+                        },
+                        {
+                            "turn": 8,
+                            "step": 6,
+                            "role": "system",
+                            "message": "Finally, multiply both sides by 2 to solve for ( x ): ( x = 14 ). The solution is ( x = 14 ). Great work! Let me know if you’d like to try another equation."
+                        }
+                    ]
+                }
+]

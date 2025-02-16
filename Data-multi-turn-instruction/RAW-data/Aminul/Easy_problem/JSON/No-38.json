@@ -1,0 +1,51 @@
+{
+    "variants": [
+        {
+            "variant": 1,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Solve the following equation: x/10 = 13."},
+                {"turn": 2, "role": "system", "message": "To isolate x, multiply both sides by 10. That gives us x = 130. Do you understand this step?"},
+                {"turn": 3, "role": "student", "message": "Yes."},
+                {"turn": 4, "role": "system", "message": "Great! The final solution is x = 130. Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 2,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Solve the following equation: x/10 = 13."},
+                {"turn": 2, "role": "system", "message": "First, let's multiply both sides by 10. What does that give us?"},
+                {"turn": 3, "role": "student", "message": "x = 130."},
+                {"turn": 4, "role": "system", "message": "Correct! The solution to x/10 = 13 is x = 130. Would you like to try another equation?"}
+            ]
+        },
+        {
+            "variant": 3,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Solve the following equation: x/10 = 13."},
+                {"turn": 2, "role": "system", "message": "Think of dividing x by 10 as splitting it into 10 equal parts. Since one part is 13, multiplying by 10 gives the total: x = 130. Does this analogy help?"},
+                {"turn": 3, "role": "student", "message": "Yes, it does."},
+                {"turn": 4, "role": "system", "message": "Great! The final solution is x = 130. Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 4,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Solve the following equation: x/10 = 13."},
+                {"turn": 2, "role": "system", "message": "To solve for x, we need to cancel out the division by 10. What should we do?"},
+                {"turn": 3, "role": "student", "message": "Multiply by 10."},
+                {"turn": 4, "role": "system", "message": "Exactly! Multiplying both sides by 10 gives x = 130. Does that make sense?"},
+                {"turn": 5, "role": "student", "message": "Yes, I get it now."},
+                {"turn": 6, "role": "system", "message": "Great! The final solution is x = 130. Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 5,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Solve the following equation: x/10 = 13."},
+                {"turn": 2, "role": "system", "message": "Let's go step by step. What happens if we multiply both sides by 10?"},
+                {"turn": 3, "role": "student", "message": "We get x = 130."},
+                {"turn": 4, "role": "system", "message": "Correct! The final solution is x = 130. Would you like to solve another equation?"}
+            ]
+        }
+    ]
+}

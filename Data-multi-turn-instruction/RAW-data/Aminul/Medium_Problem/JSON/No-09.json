@@ -1,0 +1,66 @@
+{
+    "variants": [
+        {
+            "variant": 1,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Simplify n/4 - m/3 - n/2 + m/3."},
+                {"turn": 2, "role": "system", "message": "Combine like terms. First, combine the m/3 terms: (-m/3) + (m/3) = 0. Next, combine the n/4 and -n/2 terms. Rewrite -n/2 with a denominator of 4: -n/2 = -2n/4. Add n/4 and -2n/4: n/4 - 2n/4 = -n/4. The simplified expression is -n/4. Do you understand this step?"},
+                {"turn": 3, "role": "student", "message": "Yes, I understood."},
+                {"turn": 4, "role": "system", "message": "Great! The final simplified expression is -n/4. Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 2,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Simplify n/4 - m/3 - n/2 + m/3."},
+                {"turn": 2, "role": "system", "message": "Combine like terms. First, combine the m/3 terms: (-m/3) + (m/3) = 0. Next, combine the n/4 and -n/2 terms. Rewrite -n/2 with a denominator of 4: -n/2 = -2n/4. Add n/4 and -2n/4: n/4 - 2n/4 = -n/4. The simplified expression is -n/4. Do you understand this step?"},
+                {"turn": 3, "role": "student", "message": "Why do we rewrite -n/2 as -2n/4?"},
+                {"turn": 4, "role": "system", "message": "Good question! To add or subtract fractions, they must have the same denominator. Since n/4 has a denominator of 4, we rewrite -n/2 with a denominator of 4, which becomes -2n/4. Does that make sense?"},
+                {"turn": 5, "role": "student", "message": "Yes, it does."},
+                {"turn": 6, "role": "system", "message": "Great! The final simplified expression is -n/4. Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 3,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Simplify n/4 - m/3 - n/2 + m/3."},
+                {"turn": 2, "role": "system", "message": "Let’s break it down step by step. First, the m/3 terms cancel out: (-m/3) + (m/3) = 0. Next, think of n/4 - n/2. Since they don’t have the same denominator, we rewrite -n/2 as -2n/4. Now it’s easy to subtract: n/4 - 2n/4 = -n/4. The simplified expression is -n/4. Does that analogy help?"},
+                {"turn": 3, "role": "student", "message": "Yes, it does."},
+                {"turn": 4, "role": "system", "message": "Great! Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 4,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Simplify n/4 - m/3 - n/2 + m/3."},
+                {"turn": 2, "role": "system", "message": "Combine like terms. First, combine the m/3 terms: (-m/3) + (m/3) = 0. Next, combine the n/4 and -n/2 terms. Rewrite -n/2 with a denominator of 4: -n/2 = -2n/4. Add n/4 and -2n/4: n/4 - 2n/4 = -n/4. The simplified expression is -n/4. Do you understand this step?"},
+                {"turn": 3, "role": "student", "message": "Can you explain why the m/3 terms cancel out?"},
+                {"turn": 4, "role": "system", "message": "Sure! When you add -m/3 and m/3, their numerators (-m and m) add up to 0. That’s why the m/3 terms cancel out completely. Does that make sense now?"},
+                {"turn": 5, "role": "student", "message": "Yes, it does."},
+                {"turn": 6, "role": "system", "message": "Great! The final simplified expression is -n/4. Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 5,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Simplify n/4 - m/3 - n/2 + m/3."},
+                {"turn": 2, "role": "system", "message": "Combine like terms. First, combine the m/3 terms: (-m/3) + (m/3) = 0. Next, combine the n/4 and -n/2 terms. Rewrite -n/2 with a denominator of 4: -n/2 = -2n/4. Add n/4 and -2n/4: n/4 - 2n/4 = -n/4. The simplified expression is -n/4. Do you understand this step?"},
+                {"turn": 3, "role": "student", "message": "Shouldn’t we combine -n/2 with -m/3 instead?"},
+                {"turn": 4, "role": "system", "message": "Not quite! The terms -n/2 and -m/3 cannot be combined because they don’t have the same variable or denominator. We only combine like terms. Does that make sense?"},
+                {"turn": 5, "role": "student", "message": "Oh, I see now."},
+                {"turn": 6, "role": "system", "message": "Great! The final simplified expression is -n/4. Would you like to try another problem?"}
+            ]
+        },
+        {
+            "variant": 6,
+            "conversation": [
+                {"turn": 1, "role": "student", "message": "Simplify n/4 - m/3 - n/2 + m/3."},
+                {"turn": 2, "role": "system", "message": "Combine like terms. Do you know how to combine the m/3 terms?"},
+                {"turn": 3, "role": "student", "message": "Not sure, can I get a hint?"},
+                {"turn": 4, "role": "system", "message": "Sure! Look at (-m/3) + (m/3). Since the denominators are the same, you just add the numerators: -m + m = 0. This means the m/3 terms cancel out. Does that help?"},
+                {"turn": 5, "role": "student", "message": "Yes, it does."},
+                {"turn": 6, "role": "system", "message": "Great! Now combine n/4 - n/2. Rewrite -n/2 as -2n/4 so they have the same denominator. Then subtract: n/4 - 2n/4 = -n/4. The final simplified expression is -n/4. Would you like to try another problem?"}
+            ]
+        }
+    ]
+}
