@@ -1,0 +1,315 @@
+[
+    {
+        "conversation_id": "1",
+        "topic": "Solving Linear Equations",
+        "conversation": [
+            {
+                "turn": 1,
+                "step": 1,
+                "role": "student",
+                "message": "Solve the equation: x + 2 = 3.1."
+            },
+            {
+                "turn": 2,
+                "step": 1,
+                "role": "system",
+                "message": "To solve this equation, subtract 2 from both sides. This simplifies to x = 1.1. Do you understand this step?"
+            },
+            {
+                "turn": 3,
+                "step": 1,
+                "role": "student",
+                "message": "Yes."
+            },
+            {
+                "turn": 4,
+                "step": 2,
+                "role": "system",
+                "message": "Great! The solution to x + 2 = 3.1 is x = 1.1. Would you like to try another problem?"
+            }
+        ]
+    },
+
+    {
+        "conversation_id": "2",
+        "topic": "Solving Linear Equations",
+        "conversation": [
+            {
+                "turn": 1,
+                "step": 1,
+                "role": "student",
+                "message": "Solve the equation: x + 2 = 3.1."
+            },
+            {
+                "turn": 2,
+                "step": 1,
+                "role": "system",
+                "message": "To solve this equation, subtract 2 from both sides. This simplifies to x = 1.1. Do you understand this step?"
+            },
+            {
+                "turn": 3,
+                "step": 1,
+                "role": "student",
+                "message": "Can you give me a hint?"
+            },
+            {
+                "turn": 4,
+                "step": 1,
+                "role": "system",
+                "message": "Sure! Subtracting 2 removes the constant term on the left-hand side, isolating x. This means we subtract 2 from 3.1 as well. Does that help?"
+            },
+            {
+                "turn": 5,
+                "step": 2,
+                "role": "student",
+                "message": "Yes, it makes sense now."
+            },
+            {
+                "turn": 6,
+                "step": 2,
+                "role": "system",
+                "message": "Great! The solution to x + 2 = 3.1 is x = 1.1. Would you like to try another one?"
+            }
+        ]
+    },
+
+    {
+        "conversation_id": "3",
+        "topic": "Solving Linear Equations",
+        "conversation": [
+            {
+                "turn": 1,
+                "step": 1,
+                "role": "student",
+                "message": "Solve the equation: x + 2 = 3.1."
+            },
+            {
+                "turn": 2,
+                "step": 1,
+                "role": "system",
+                "message": "To solve this equation, subtract 2 from both sides. This simplifies to x = 1.1. Do you understand this step?"
+            },
+            {
+                "turn": 3,
+                "step": 1,
+                "role": "student",
+                "message": "Can we solve this another way?"
+            },
+            {
+                "turn": 4,
+                "step": 1,
+                "role": "system",
+                "message": "Sure! We can rewrite the equation as x = 3.1 - 2 by isolating x directly. Simplify this: x = 1.1. Does this make sense?"
+            },
+            {
+                "turn": 5,
+                "step": 2,
+                "role": "student",
+                "message": "Yes, I understand now."
+            },
+            {
+                "turn": 6,
+                "step": 3,
+                "role": "system",
+                "message": "Great! The solution to x + 2 = 3.1 is x = 1.1. Let me know if you’d like to try another problem or method!"
+            }
+        ]
+    },
+
+    {
+        "conversation_id": "4",
+        "topic": "Solving Linear Equations",
+        "conversation": [
+            {
+                "turn": 1,
+                "step": 1,
+                "role": "student",
+                "message": "Solve the equation: x + 2 = 3.1."
+            },
+            {
+                "turn": 2,
+                "step": 1,
+                "role": "system",
+                "message": "To solve this equation, subtract 2 from both sides. This simplifies to x = 1.1. Do you understand this step?"
+            },
+            {
+                "turn": 3,
+                "step": 1,
+                "role": "student",
+                "message": "Why do we subtract 2?"
+            },
+            {
+                "turn": 4,
+                "step": 1,
+                "role": "system",
+                "message": "Good question! Subtracting 2 eliminates the constant term on the left-hand side, leaving only x. This keeps the equation balanced, as we subtract 2 from both sides. Does that help?"
+            },
+            {
+                "turn": 5,
+                "step": 2,
+                "role": "student",
+                "message": "Yes, I understand now."
+            },
+            {
+                "turn": 6,
+                "step": 3,
+                "role": "system",
+                "message": "Great! The solution to x + 2 = 3.1 is x = 1.1. Would you like to try another one?"
+            }
+        ]
+    },
+
+    {
+        "conversation_id": "5",
+        "topic": "Solving Linear Equations",
+        "conversation": [
+            {
+                "turn": 1,
+                "step": 1,
+                "role": "student",
+                "message": "Solve the equation: x + 2 = 3.1."
+            },
+            {
+                "turn": 2,
+                "step": 1,
+                "role": "system",
+                "message": "To solve this equation, subtract 2 from both sides. This simplifies to x = 1.1. Do you understand this step?"
+            },
+            {
+                "turn": 3,
+                "step": 1,
+                "role": "student",
+                "message": "Can you explain that again?"
+            },
+            {
+                "turn": 4,
+                "step": 1,
+                "role": "system",
+                "message": "Sure! Subtracting 2 eliminates the +2 on the left-hand side, isolating x. Since we subtract 2 from one side, we also subtract 2 from the other side: 3.1 - 2 = 1.1. Does that make sense now?"
+            },
+            {
+                "turn": 5,
+                "step": 2,
+                "role": "student",
+                "message": "Yes, I understand now."
+            },
+            {
+                "turn": 6,
+                "step": 3,
+                "role": "system",
+                "message": "Great! The solution to x + 2 = 3.1 is x = 1.1. Would you like to try another problem?"
+            }
+        ]
+    },
+
+    {
+        "conversation_id": "6",
+        "topic": "Solving Linear Equations",
+        "conversation": [
+            {
+                "turn": 1,
+                "step": 1,
+                "role": "student",
+                "message": "Solve the equation: x + 2 = 3.1."
+            },
+            {
+                "turn": 2,
+                "step": 1,
+                "role": "system",
+                "message": "To solve this equation, subtract 2 from both sides. This simplifies to x = 1.1. Do you understand this step?"
+            },
+            {
+                "turn": 3,
+                "step": 1,
+                "role": "student",
+                "message": "Shouldn’t we add 2 instead?"
+            },
+            {
+                "turn": 4,
+                "step": 1,
+                "role": "system",
+                "message": "Not quite! Adding 2 would increase the left-hand side instead of isolating x. Subtracting 2 balances the equation by removing the +2 on the left. Does that help?"
+            },
+            {
+                "turn": 5,
+                "step": 2,
+                "role": "student",
+                "message": "Yes, I get it now."
+            },
+            {
+                "turn": 6,
+                "step": 3,
+                "role": "system",
+                "message": "Great! The solution to x + 2 = 3.1 is x = 1.1. Would you like to try another one?"
+            }
+        ]
+    },
+    
+    {
+        "conversation_id": "7",
+        "topic": "Solving Linear Equations",
+        "conversation": [
+            {
+                "turn": 1,
+                "step": 1,
+                "role": "student",
+                "message": "Solve the equation: x + 2 = 3.1."
+            },
+            {
+                "turn": 2,
+                "step": 1,
+                "role": "system",
+                "message": "To solve this equation, subtract 2 from both sides. This simplifies to x = 1.1. Do you understand this step?"
+            },
+            {
+                "turn": 3,
+                "step": 1,
+                "role": "student",
+                "message": "No, I don’t understand. Can you explain more?"
+            },
+            {
+                "turn": 4,
+                "step": 1,
+                "role": "system",
+                "message": "Sure! The equation x + 2 = 3.1 means that x plus 2 equals 3.1. To isolate x, we remove the +2 by subtracting it from both sides. This leaves x = 3.1 - 2, which simplifies to x = 1.1. Does that help?"
+            },
+            {
+                "turn": 5,
+                "step": 2,
+                "role": "student",
+                "message": "I think so, but I’m still not sure."
+            },
+            {
+                "turn": 6,
+                "step": 2,
+                "role": "system",
+                "message": "Let’s go step by step. Start with x + 2 = 3.1. Subtracting 2 removes the constant term on the left: x = 3.1 - 2. Simplify this: x = 1.1. Does this make more sense now?"
+            },
+            {
+                "turn": 7,
+                "step": 3,
+                "role": "student",
+                "message": "Yes, I get it now."
+            },
+            {
+                "turn": 8,
+                "step": 4,
+                "role": "system",
+                "message": "Great! The solution to x + 2 = 3.1 is x = 1.1. Do you understand this step?"
+            },
+            {
+                "turn": 9,
+                "step": 4,
+                "role": "student",
+                "message": "Yes, I understand."
+            },
+            {
+                "turn": 10,
+                "step": 5,
+                "role": "system",
+                "message": "Fantastic! The solution to x + 2 = 3.1 is x = 1.1. Would you like to try another problem?"
+            }
+        ]
+    }
+    
+]
