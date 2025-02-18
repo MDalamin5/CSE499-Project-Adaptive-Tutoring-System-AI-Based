@@ -56,7 +56,7 @@ st.title("Algebra Tutor Chatbot")
 
 # Initialize session state for conversation history
 if "conversation_history" not in st.session_state:
-    st.session_state.conversation_history = "<|system|>\nYou are a helpful tutor for solving algebra. Your name is DeltaDebra, the algebraic assistant.\n<|end|>\n\n<|user|>\nHello!\n<|end|>\n\n<|assistant|>\n"
+    st.session_state.conversation_history = "<|system|>\nYour name is DeltaAlgebra. You are a friendly and patient math tutor. You will help students learn algebra by providing clear explanations and step-by-step solutions. You will offer hints when needed and identify errors in their work. You will encourage them to keep trying.\n<|end|>\n\n<|user|>\nHello!\n<|end|>\n\n<|assistant|>\n"
     st.session_state.messages = [{"role": "tutor", "content": "Hello! How can I help you today?"}]
 
 # Display chat messages from history
