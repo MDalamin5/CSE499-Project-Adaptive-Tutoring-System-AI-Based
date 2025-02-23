@@ -1,0 +1,20 @@
+[
+    {
+        "question_en": "Janet’s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at the farmers' market daily for $2 per fresh duck egg. How much in dollars does she make every day at the farmers' market?",
+        "answer_en": "Janet sells 16 - 3 - 4 = <<16-3-4=9>>9 duck eggs a day.\nShe makes 9 * 2 = $<<9*2=18>>18 every day at the farmer’s market.\n#### 18",
+        "question_bn": "জেনেটের হাতি প্রতিদিন ১৬টি ডিম পাড়ে। সে প্রতিদিন সকালে ব্রেকফাস্টে ৩টি ডিম খায় এবং প্রতিদিন তার বন্ধুদের জন্য ৪টি ডিম বেকড়ে মাফিন তৈরি করে। সে ফার্মার্স মার্কেটে প্রতিদিন বাকি ডিম বিক্রি করে যার প্রতি ডিমের মূল্য $2। সে প্রতিদিন ফার্মার্স মার্কেটে কত টাকা আয় করে?",
+        "answer_bn": "জেনেট ১৬ - 3 - 4 =<<16-3-4=9>>৯ ডাক এগগ\nতিনি ৯ * 2 = $ করেন।<<9*2=18>>18 প্রতিদিন ফার্মার্স মার্কেটে।#### 18আপনি কোনও টেক্সট দিয়ে নি, সেজন্য আমি কোনও অনুবাদ করতে পারি না। দয়া করে একটি টেক্সট দিয়ে দিন।"
+    },
+    {
+        "question_en": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+        "answer_en": "It takes 2/2=<<2/2=1>>1 bolt of white fiber\nSo the total amount of fabric is 2+1=<<2+1=3>>3 bolts of fabric\n#### 3",
+        "question_bn": "এক রোবে 2 বোল্ট নীল ফিবার এবং তার অর্ধেক মাত্রা সাদা ফিবার লাগে। মোট কত বোল্ট লাগে?",
+        "answer_bn": "এতে 2/2=<<2/2=1>>1 টি সাদা ফিবার\nসুতরাং মোট কাপড়ের পরিমাণ হল 2+1=<<2+1=3>>3 টি কাপড়ের ফ্যাবrics#### 3আপনি কোনো টেক্সট দিয়েননি যাকে বাংলায় অনুবাদ করা যায়। বাংলায় অনুবাদ করতে আমাকে ইংরেজি টেক্সট দিতে হবে।"
+    },
+    {
+        "question_en": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%.  How much profit did he make?",
+        "answer_en": "The cost of the house and repairs came out to 80,000+50,000=$<<80000+50000=130000>>130,000\nHe increased the value of the house by 80,000*1.5=<<80000*1.5=120000>>120,000\nSo the new value of the house is 120,000+80,000=$<<120000+80000=200000>>200,000\nSo he made a profit of 200,000-130,000=$<<200000-130000=70000>>70,000\n#### 70000",
+        "question_bn": "জোশ একটি বাড়ি ফ্লিপ করার চেষ্টা করেন। তিনি একটি বাড়ি কিনেন $80,000 এবং তারপর $50,000 রিপেয়ার করেন। এটি বাড়ির মূল্যকে 150% বাড়ানো। তিনি কতটুকু লাভ করেন?",
+        "answer_bn": "বাড়ির ও আবাসিক পরিবর্তনের খরচ 80,000+50,000=$<<80000+50000=130000>>130,000\nতিনি বাড়ির মূল্য বাড়ালেন 80,000*1.5=<<80000*1.5=120000>>120,000\nতাই বাড়ির নতুন মূল্য হল 120,000+80,000=$<<120000+80000=200000>>তাই তিনি ২০০,০০০-১৩০,০০০=$ লাভ করলেন<<200000-130000=70000>>70,000#### 70000কিভাবে আপনি কলেজে পড়াশোনা করেন?"
+    }
+]
