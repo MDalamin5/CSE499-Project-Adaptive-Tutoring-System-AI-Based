@@ -42,3 +42,4 @@ pinecone-client
 pinecone-text
 pinecone-notebooks
 neo4j==5.14
+streamlit-chat
