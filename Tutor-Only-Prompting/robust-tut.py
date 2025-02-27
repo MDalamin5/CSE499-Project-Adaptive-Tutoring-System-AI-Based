@@ -150,6 +150,7 @@ if prompt := st.chat_input("এখানে আপনার প্রশ্ন �
         st.session_state.messages.append({"role": "assistant", "content": ai_message.content})
         with st.chat_message("assistant"):
             st.markdown(ai_message.content)
+            
 
     except Exception as e:
         st.error(f"একটি ত্রুটি ঘটেছে: {e}") # An error occurred

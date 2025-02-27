@@ -6,7 +6,7 @@ from langchain_groq import ChatGroq
 from langchain_community.chat_message_histories import ChatMessageHistory
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
-
+import time
 load_dotenv()
 groq_api_key = os.getenv("GROQ_API_KEY")
 
@@ -79,6 +79,9 @@ for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
 
+
+
+
 # Get user input
 if prompt := st.chat_input("এখানে আপনার গণিত সমস্যা লিখুন..."):  # Enter your math problem here...
     # Add user message to session state
@@ -99,7 +102,16 @@ if prompt := st.chat_input("এখানে আপনার গণিত সম�
         # Add AI message to session state
         st.session_state.messages.append({"role": "assistant", "content": ai_message.content})
         with st.chat_message("assistant"):
-            st.markdown(ai_message.content)
+            # st.markdown(ai_message.content)
+            # # st.write_stream(ai_message.content)
+            response=ai_message.content
+            
+            def stream_data():
+                for word in response.split(" "):
+                    yield word + " "
+                    time.sleep(0.015)
+
+            st.write_stream(stream_data)
 
     except Exception as e:
         st.error(f"একটি ত্রুটি ঘটেছে: {e}") # An error occurred
