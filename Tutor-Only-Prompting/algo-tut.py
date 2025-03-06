@@ -9,6 +9,7 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 import time
 import asyncio  # Import asyncio
 from prompt import load_system_prompt
+from prompt_v2 import load_system_prompt2
 
 load_dotenv()
 groq_api_key = os.getenv("GROQ_API_KEY")
@@ -20,7 +21,8 @@ grq_model = st.sidebar.selectbox("Model", ["qwen-2.5-32b","qwen-2.5-coder-32b"])
 @st.cache_resource
 def setup_llm():
     model = ChatGroq(model_name=grq_model, temperature=temperature) # Lower temperature for more predictable responses
-    system_prompt = load_system_prompt()
+    # system_prompt = load_system_prompt()
+    system_prompt = load_system_prompt2()
 
     prompt = ChatPromptTemplate.from_messages(
         [
