@@ -11,6 +11,7 @@ from langchain_core.output_parsers import PydanticOutputParser
 from langchain.schema.runnable import RunnableBranch
 from pydantic import BaseModel, Field
 from typing import Literal
+import json
 
 load_dotenv()
 groq_api_key = os.getenv("GROQ_API_KEY")
@@ -86,6 +87,8 @@ prompt_correct = ChatPromptTemplate.from_messages(
          Student gave a response which is correct: {response}
          You can analyze the previous chat history and the student’s latest response.
          Return your result in the following format:\n{format_instructions}
+
+         Make sure that the adaptive_prompt value is in correct json format like \\\\, \\n etc.
          """
          
          ),
@@ -108,6 +111,7 @@ prompt_partially_correct = ChatPromptTemplate.from_messages(
 
          Return your result in the following format:
          {format_instructions}
+         Make sure that the adaptive_prompt value is in correct json format like \\\\, \\n etc.
          """
          ),
         MessagesPlaceholder(variable_name="messages")
@@ -124,6 +128,7 @@ prompt_incorrect = ChatPromptTemplate.from_messages(
          Student gave a response which is incorrect: {response}
          You can analyze the previous chat history and the student’s latest response.
          Return your result in the following format:\n{format_instructions}
+         Make sure that the adaptive_prompt value is in correct json format like \\\\, \\n etc.
          """
          ),
         MessagesPlaceholder(variable_name="messages")
@@ -132,13 +137,21 @@ prompt_incorrect = ChatPromptTemplate.from_messages(
 
 ## hare i just update the partially correct prompt which can produce the pydantic output you update correct and incorrect prompt also
 
+def create_adaptive_prompt(chain):
+    def get_prompt(input):
+        result = chain.invoke(input)
+        return {
+            "adaptive_prompt": result.adaptive_prompt,
+            "sentiment": input["sentiment"]
+        }
+    return get_prompt
 
 
 branch_chain = RunnableBranch(
-    (lambda x: x["sentiment"] == 'correct', prompt_correct | model | adaptive_parser),
-    (lambda x: x["sentiment"] == 'partially_correct', prompt_partially_correct | model | adaptive_parser),
-    (lambda x: x["sentiment"] == 'incorrect', prompt_incorrect | model | adaptive_parser),
-    RunnableLambda(lambda x: {"adaptive_prompt": "Couldn't determine sentiment."})
+    (lambda x: x["sentiment"] == 'correct', create_adaptive_prompt(prompt_correct | model | adaptive_parser)),
+    (lambda x: x["sentiment"] == 'partially_correct', create_adaptive_prompt(prompt_partially_correct | model | adaptive_parser)),
+    (lambda x: x["sentiment"] == 'incorrect', create_adaptive_prompt(prompt_incorrect | model | adaptive_parser)),
+    RunnableLambda(lambda x: {"adaptive_prompt": "Couldn't determine sentiment.", "sentiment": "unknown"})
 )
 
 from langchain_core.runnables import RunnableLambda
@@ -146,19 +159,20 @@ from langchain_core.runnables import RunnableLambda
 # Wrap classifier_chain to return full input + parsed sentiment
 def enrich_with_sentiment(input: dict) -> dict:
     messages = input['messages']
+    student_response = input['response']
     if len(messages) >= 2:
-        tutor_question = messages[-2]['content'] # Assuming the second-to-last message is the tutor's question
+        tutor_question = messages[-2]['content'] # Access Tutor's question here
     else:
         tutor_question = "No previous question available."
 
     sentiment_result = classifier_chain.invoke({
-        'response': input['response'],
-        'tutor_question': tutor_question,
-        'messages': messages # Keep passing the messages for context in the other prompts
+        'response': student_response,
+        'tutor_question': tutor_question, # and here
+        'messages': messages  # Still pass the full history for context in other chains
     })
     print(sentiment_result)
     return {
-        **input,  # includes 'messages' and 'response'
+        **input,
         'sentiment': sentiment_result.sentiment
     }
 
@@ -191,7 +205,8 @@ You are an AI math tutor specializing in high school algebra. Your goal is to gu
 4.  **Ask a Guiding Question:** After providing the hint, *always* ask the student a question to encourage them to apply the hint. This question should:
     *   Directly relate to the hint you provided.
     *   Help the student think through the next step in the solution.
-5.  **Wait for Student Response:** Do *not* solve the problem for the student. Wait for them to respond to your hint and question.
+    5.  **Wait for Student Response:** Do *not* solve the problem for the student. Wait for them to respond to your hint and question.
+    Make sure that if student correct answer than you have to classify is correct.
 6.  **Example Interaction:**
 
     *   Student: Solve x^2 + 5x + 6 = 0
@@ -259,11 +274,26 @@ if prompt := st.chat_input("Enter your math problem here..."):
             'messages': st.session_state.messages[:-1],  # All messages *except* the latest user input
             'response': prompt  # User's latest input (the response to be analyzed)
         })
-        adaptive_prompt = adaptive_prompt_result.adaptive_prompt
+        try:
+            adaptive_prompt = adaptive_prompt_result["adaptive_prompt"]
+            sentiment = adaptive_prompt_result["sentiment"]  #Extract sentiment
+
+        except (AttributeError, ValueError, TypeError) as e:
+            st.error(f"Error processing adaptive prompt: {e}")
+            adaptive_prompt = ""
+            sentiment = "Error"
+
     else:
         adaptive_prompt = "" # No adaptive prompt on the first turn
+        sentiment = "N/A"
 
-    # Display adaptive prompt in the sidebar
+
+    # Display message history and sentiment in the sidebar
+    st.sidebar.header("Message History:")
+    for msg in st.session_state.messages:
+        st.sidebar.write(f"**{msg['role']}:** {msg['content']}")
+    st.sidebar.write(f"**Sentiment:** {sentiment}")
+    
     st.sidebar.write(f"Adaptive Prompt: {adaptive_prompt}")
 
     # Initialize LLM chain with the adaptive prompt (even if it's empty on the first turn)
