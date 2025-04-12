@@ -1,0 +1,18 @@
+1. 📘 Dataset Format
+You already started this right — for each topic (like Trigonometry), create markdown datasets with:
+
+- Topic overview
+
+- Prerequisites & links to them
+
+- Real-world applications
+
+- Concepts explained in steps
+
+- Formulas with derivations
+
+- Guided problems (easy ➡ hard)
+
+- Common mistakes
+
+- Mini quizzes or checks for understanding
