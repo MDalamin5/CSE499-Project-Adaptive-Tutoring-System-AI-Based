@@ -7,7 +7,7 @@ from langchain_community.chat_message_histories import ChatMessageHistory
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.runnables import RunnableLambda
-from langchain_core.output_parsers import PydanticOutputParser
+from langchain.output_parsers import PydanticOutputParser, OutputFixingParser
 from langchain.schema.runnable import RunnableBranch
 from pydantic import BaseModel, Field
 from typing import Literal
@@ -18,10 +18,10 @@ groq_api_key = os.getenv("GROQ_API_KEY")
 
 # Define Pydantic models for adaptive prompt generation (assuming these are correct)
 class StuOutputCorrectness(BaseModel):
-    sentiment: Literal['correct', 'partially_correct', 'incorrect'] = Field(description='Give the sentiment from the student response')
+    sentiment: Literal['correct', 'partially_correct', 'incorrect'] = Field(description='Classify the student response as correct, partially_correct, or incorrect.')
 
 class AdaptivePrompt(BaseModel):
-    adaptive_prompt: str = Field(description="The final adaptive prompt to guide the main model.")
+    adaptive_prompt: str = Field(description="A concise and effective adaptive prompt to guide the main tutor model.")
 
 # --- Adaptive Prompt Generation Components (Assuming these are already defined and functional) ---
 # (You should have your classifier_chain, prompt_correct, prompt_partially_correct, prompt_incorrect,
@@ -39,7 +39,7 @@ load_dotenv()
 from langchain_groq import ChatGroq
 from pydantic import BaseModel, Field
 from typing import Literal
-from langchain_core.output_parsers import PydanticOutputParser
+from langchain.output_parsers import PydanticOutputParser, OutputFixingParser
 
 
 groq_api_key=os.getenv("GROQ_API_KEY")
@@ -47,48 +47,51 @@ groq_api_key=os.getenv("GROQ_API_KEY")
 classifier_model=ChatGroq(groq_api_key=groq_api_key,model_name="deepseek-r1-distill-llama-70b")
 
 class StuOutputCorrectness(BaseModel):
-    sentiment: Literal['correct', 'partially_correct', 'incorrect'] = Field(description='Give the sentiment from the student response *in the context of the tutor question*')
+    sentiment: Literal['correct', 'partially_correct', 'incorrect'] = Field(description='Classify the student response as correct, partially_correct, or incorrect.')
     
 
 class AdaptivePrompt(BaseModel):
-    adaptive_prompt: str = Field(description="The final adaptive prompt to guide the main model.")
+    adaptive_prompt: str = Field(description="A concise and effective adaptive prompt to guide the main tutor model.")
     
-parser = PydanticOutputParser(pydantic_object=StuOutputCorrectness)
+sentiment_parser = PydanticOutputParser(pydantic_object=StuOutputCorrectness)
+adaptive_parser = PydanticOutputParser(pydantic_object=AdaptivePrompt)
 
 chat_prompt = ChatPromptTemplate.from_messages(
     [
-        ("system", """Analyze the following interaction between a tutor and a student and classify the student's response.
-        Determine whether the student response is 'correct', 'partially_correct', or 'incorrect' *in the context of the tutor's question related to math*.
+        ("system", """You are an expert at analyzing student responses in math tutoring scenarios. 
+        Classify the student's response as 'correct', 'partially_correct', or 'incorrect'.
+        Base your classification *solely* on the correctness of the math in the response.
 
-        
+        Tutor's Question: {tutor_question}
         Student Response: {response}
 
-        Provide the classification following this format:\n{format_instruction}"""),
+        Provide the classification in the following JSON format:
+        {format_instruction}"""),
         MessagesPlaceholder(variable_name='messages')
     ]
-).partial(format_instruction=parser.get_format_instructions())
+).partial(format_instruction=sentiment_parser.get_format_instructions())
 
-classifier_chain = chat_prompt | classifier_model | parser
+classifier_chain = chat_prompt | classifier_model | sentiment_parser
 
 
 ## branching prompt
 
 from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
-adaptive_parser = PydanticOutputParser(pydantic_object=AdaptivePrompt)
+
 
 
 prompt_correct = ChatPromptTemplate.from_messages(
     [
         ("system", 
          """
-         Your task is to generate one adaptive prompt only. This prompt will be used as the system prompt for the main model. 
-         Think of yourself as a supervisor providing the best instruction for the AI tutor.
-        
-         Student gave a response which is correct: {response}
-         You can analyze the previous chat history and the student’s latest response.
-         Return your result in the following format:\n{format_instructions}
+         You are an expert AI tutor supervisor. Your task is to generate *one* adaptive prompt to guide the main tutor model. The adaptive prompt should be clear, concise, and *directly related* to the student's needs in the *current math problem*.
 
-         
+         Student gave a response which is correct: {response}
+
+         Based on the student's correct response, what is the *very next step* the tutor should guide the student towards? Be specific and focus on the math problem.
+
+         Generate the adaptive prompt in the following JSON format:
+         {format_instructions}
          """
          
          ),
@@ -102,16 +105,14 @@ prompt_partially_correct = ChatPromptTemplate.from_messages(
     [
         ("system", 
          """
-         Your task is to generate one adaptive prompt only. This prompt will be used as the system prompt for the main model. 
-         Think of yourself as a supervisor providing the best instruction for the AI tutor.
-
-         You can analyze the previous chat history and the student’s latest response.
+         You are an expert AI tutor supervisor. Your task is to generate *one* adaptive prompt to guide the main tutor model. The adaptive prompt should be clear, concise, and *directly related* to the student's needs in the *current math problem*.
 
          Student gave a response which is partially correct: {response}
 
-         Return your result in the following format:
+         What specific aspect of the math problem does the student need help with *right now*? Provide a hint or ask a guiding question to address their misunderstanding.
+
+         Generate the adaptive prompt in the following JSON format:
          {format_instructions}
-         
          """
          ),
         MessagesPlaceholder(variable_name="messages")
@@ -122,13 +123,14 @@ prompt_incorrect = ChatPromptTemplate.from_messages(
     [
         ("system", 
          """
-         Your task is to generate one adaptive prompt only. This prompt will be used as the system prompt for the main model. 
-         Think of yourself as a supervisor providing the best instruction for the AI tutor.
-        
+         You are an expert AI tutor supervisor. Your task is to generate *one* adaptive prompt to guide the main tutor model. The adaptive prompt should be clear, concise, and *directly related* to the student's needs in the *current math problem*.
+
          Student gave a response which is incorrect: {response}
-         You can analyze the previous chat history and the student’s latest response.
-         Return your result in the following format:\n{format_instructions}
-         
+
+         What is the most likely reason for the student's incorrect answer? Provide a hint or ask a guiding question to correct their misunderstanding.
+
+         Generate the adaptive prompt in the following JSON format:
+         {format_instructions}
          """
          ),
         MessagesPlaceholder(variable_name="messages")
@@ -136,22 +138,30 @@ prompt_incorrect = ChatPromptTemplate.from_messages(
 ).partial(format_instructions=adaptive_parser.get_format_instructions())
 
 ## hare i just update the partially correct prompt which can produce the pydantic output you update correct and incorrect prompt also
-model = ChatGroq(model_name="deepseek-r1-distill-llama-70b", temperature=0.4)
+model = ChatGroq(model_name="gemma2-9b-it", temperature=0.4)
+#output_parser = PydanticOutputParser(pydantic_object=AdaptivePrompt)
+output_parser = OutputFixingParser.from_llm(parser=adaptive_parser, llm=model)
 
-def create_adaptive_prompt(chain):
+def create_adaptive_prompt(prompt):
     def get_prompt(input):
-        result = chain.invoke(input)
-        return {
-            "adaptive_prompt": result.adaptive_prompt,
-            "sentiment": input["sentiment"]
-        }
+        try:
+            result = prompt.invoke(input)
+            parsed_result = output_parser.parse(result.content)
+            print(parsed_result, "\n", result)
+            return {
+                "adaptive_prompt": parsed_result.adaptive_prompt,
+                "sentiment": input["sentiment"]
+            }
+        except Exception as e:
+            st.error(f"Error parsing adaptive prompt: {e}")
+            return {"adaptive_prompt": "Error generating prompt.", "sentiment": input["sentiment"]}
     return get_prompt
 
 
 branch_chain = RunnableBranch(
-    (lambda x: x["sentiment"] == 'correct', create_adaptive_prompt(prompt_correct | model | adaptive_parser)),
-    (lambda x: x["sentiment"] == 'partially_correct', create_adaptive_prompt(prompt_partially_correct | model | adaptive_parser)),
-    (lambda x: x["sentiment"] == 'incorrect', create_adaptive_prompt(prompt_incorrect | model | adaptive_parser)),
+    (lambda x: x["sentiment"] == 'correct', create_adaptive_prompt(prompt_correct | model)),
+    (lambda x: x["sentiment"] == 'partially_correct', create_adaptive_prompt(prompt_partially_correct | model)),
+    (lambda x: x["sentiment"] == 'incorrect', create_adaptive_prompt(prompt_incorrect | model)),
     RunnableLambda(lambda x: {"adaptive_prompt": "Couldn't determine sentiment.", "sentiment": "unknown"})
 )
 
@@ -168,7 +178,7 @@ def enrich_with_sentiment(input: dict) -> dict:
 
     sentiment_result = classifier_chain.invoke({
         'response': student_response,
-        'tutor_question': tutor_question, # and here
+        'tutor_question': tutor_question,
         'messages': messages  # Still pass the full history for context in other chains
     })
     print(sentiment_result)
@@ -273,7 +283,8 @@ if prompt := st.chat_input("Enter your math problem here..."):
         # Generate adaptive prompt
         adaptive_prompt_result = final_chain.invoke({
             'messages': st.session_state.messages[:-1],  # All messages *except* the latest user input
-            'response': prompt  # User's latest input (the response to be analyzed)
+            'response': prompt,  # User's latest input (the response to be analyzed)
+            'tutor_question': st.session_state.messages[-2]["content"] if len(st.session_state.messages) >= 2 else ""
         })
         try:
             adaptive_prompt = adaptive_prompt_result["adaptive_prompt"]
