@@ -242,12 +242,11 @@ def setup_llm(language):
         system_prompt = SYSTEM_PROMPT_ENGLISH
     
     # Create the prompt template
-    prompt = ChatPromptTemplate.from_messages(
-        [
-            ('system', system_prompt),
-            MessagesPlaceholder(variable_name="messages")
-        ]
-    )
+    prompt = ChatPromptTemplate.from_messages([
+    {"role": "system", "content": system_prompt},
+    MessagesPlaceholder(variable_name="messages")
+    ])
+
     
     # Create the chain
     chain = prompt | model
@@ -357,7 +356,7 @@ def main():
             
             # Invoke the chain with the updated prompt
             ai_message = runnable.invoke(
-                [HumanMessage(content=prompt)],
+                {"messages": [HumanMessage(content=prompt)]}, # Changed this line
                 config={"configurable": {"session_id": 'math_session'}}
             )
             

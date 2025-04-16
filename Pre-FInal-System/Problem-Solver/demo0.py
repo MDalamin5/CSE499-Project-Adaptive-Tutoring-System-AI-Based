@@ -75,7 +75,7 @@ So let's begin!
 # Initialize Langchain components
 @st.cache_resource
 def setup_llm(language):
-    model = ChatGroq(model_name="qwen-qwq-32b", temperature=0.1)  # Lower temperature for more predictable responses
+    model = ChatGroq(model_name="meta-llama/llama-4-scout-17b-16e-instruct", temperature=0.1)  # Lower temperature for more predictable responses
 
     if language == "Bangla":
         system_prompt = SYSTEM_PROMPT_BANGLA
@@ -151,7 +151,7 @@ if prompt := st.chat_input(prompt_text):
             def stream_data():
                 for word in response.split(" "):
                     yield word + " "
-                    time.sleep(0.015)
+                    time.sleep(0.0015)
 
             st.write_stream(stream_data)
 
