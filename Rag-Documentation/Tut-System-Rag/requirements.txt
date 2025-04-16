@@ -1,0 +1,1 @@
+pip install langchain langchain-community langchain-core langchain-huggingface langchain-chroma streamlit chromadb pydantic sentence-transformers
