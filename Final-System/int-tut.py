@@ -591,7 +591,7 @@ def main():
                 st.session_state.adaptive_prompt = adaptive_result.adaptive_prompt
                 
                 # Display adaptive prompt in sidebar
-                adaptive_prompt_display.info(f"Generated adaptive prompt:\n\n{st.session_state.adaptive_prompt[:300]}...")
+                adaptive_prompt_display.info(f"Generated adaptive prompt:\n\n{st.session_state.adaptive_prompt[:400]}...")
                 
                 # Combine base prompt with adaptive prompt
                 current_system_prompt = f"{base_prompt}\n\n{st.session_state.adaptive_prompt}"
