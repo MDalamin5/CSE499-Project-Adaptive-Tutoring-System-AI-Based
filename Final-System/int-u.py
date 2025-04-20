@@ -463,11 +463,11 @@ def enforce_hint_only_approach(response):
 # Main Streamlit UI
 def main():
     st.set_page_config(
-    page_title="Adaptive Tutor",
-    page_icon="💡",
-    layout="wide"
+        page_title="AI Math Tutor",
+        page_icon="💡",
+        layout="wide"
     )
-    st.title("Adaptive AI Math Tutor")
+    st.title("Adaptive Ai Math Tutor")
     st.write(
      """
      Welcome! I'm your personalized `AI Math Tutor`, designed to guide you
@@ -475,6 +475,8 @@ def main():
      Let's tackle together 🤝!
      """
     )
+    
+    
     # Initialize session state
     if "messages" not in st.session_state:
         st.session_state.messages = []
@@ -618,19 +620,21 @@ def main():
             # Create a new chain with the updated prompt
             dynamic_chain = dynamic_prompt | model
             dynamic_runnable = setup_runnable(dynamic_chain)
-            
-            # Invoke the chain with the updated prompt
+
+            # ----- ADDED SPINNER HERE -----
             with st.spinner("Tutor is thinking..."):
+                # Invoke the chain with the updated prompt
                 ai_message = dynamic_runnable.invoke(
                     [HumanMessage(content=prompt)],
                     config={"configurable": {"session_id": 'math_session'}}
                 )
             
-            # Process the response to extract hint and reasoning
-            tutor_response = process_tutor_response_output(ai_message.content)
-            
-            # Enforce hint-only approach by checking and modifying the response if needed
-            tutor_response = enforce_hint_only_approach(tutor_response)
+                # Process the response to extract hint and reasoning
+                tutor_response = process_tutor_response_output(ai_message.content)
+
+                # Enforce hint-only approach by checking and modifying the response if needed
+                tutor_response = enforce_hint_only_approach(tutor_response)
+            # ----- END ADDED SPINNER -----
             
             # Save the tutor's hint for next round of analysis
             st.session_state.last_tutor_hint = tutor_response.hint
