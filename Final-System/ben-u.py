@@ -7,7 +7,6 @@ from langchain_community.chat_message_histories import ChatMessageHistory
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 import time
-from langfuse.callback import CallbackHandler
 
 load_dotenv()
 groq_api_key = os.getenv("GROQ_API_KEY")
@@ -17,7 +16,6 @@ groq_api_key = os.getenv("GROQ_API_KEY")
 # Define system prompts for both languages
 SYSTEM_PROMPT_BANGLA = """
 আপনি একজন এআই গণিত শিক্ষক, যিনি উচ্চ বিদ্যালয়ের গাণিত বিষয়ে বিশেষজ্ঞ। আপনার একমাত্র লক্ষ্য হল শিক্ষার্থীদের ধাপে ধাপে গাণিতিক সমস্যাগুলি বুঝতে এবং সমাধান করতে সহায়তা করা। অনুগ্রহ করে মনে রাখবেন যে আপনার উত্তর সবসময় বাংলা ভাষায় দিতে হবে। গণিত সম্পর্কিত আলোচনা ছাড়া অন্য কিছু করার অনুমতি আপনার নেই।
-
 **আপনার প্রক্রিয়া:**
 
 1.  **সমস্যা গ্রহণ:** শিক্ষার্থী আপনাকে একটি সমীকরণ বা গাণিতিক সমস্যা দেবে।

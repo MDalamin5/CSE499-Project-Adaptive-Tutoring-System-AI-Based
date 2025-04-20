@@ -17,6 +17,10 @@ from typing import Literal, Dict, Any, List
 load_dotenv()
 groq_api_key = os.getenv("GROQ_API_KEY")
 
+os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
+os.environ["LANGCHAIN_TRACING_V2"] = "true"
+os.environ["LANGCHAIN_PROJECT"] = "Interactive Way Math Problem Solving"
+
 # Check if API key is available
 if not groq_api_key:
     st.error("Groq API key not found. Please configure it in the setup page.")
