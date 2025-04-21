@@ -15,9 +15,17 @@ from typing import Literal, Dict, Any, List
 
 # Load environment variables
 load_dotenv()
-groq_api_key = os.getenv("GROQ_API_KEY")
+# groq_api_key = os.getenv("GROQ_API_KEY")
 
-os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
+# os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
+# os.environ["LANGCHAIN_TRACING_V2"] = "true"
+# os.environ["LANGCHAIN_PROJECT"] = "Interactive Way Math Problem Solving"
+
+# Access the Groq API key from Streamlit secrets
+groq_api_key = st.secrets["GROQ_API_KEY"]
+
+# Set environment variables for Langchain tracing (if you're using it)
+os.environ["LANGCHAIN_API_KEY"] = st.secrets.get("LANGCHAIN_API_KEY", "") # Get the value if it exists
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_PROJECT"] = "Interactive Way Math Problem Solving"
 
@@ -113,7 +121,7 @@ robust_tutor_response_parser = RobustOutputParser(tutor_response_parser)
 @st.cache_resource
 def setup_llm():
     # Initialize the base model
-    model = ChatGroq(model_name="qwen-qwq-32b", temperature=0.1)
+    model = ChatGroq(model_name="qwen-qwq-32b", temperature=0.1, groq_api_key=groq_api_key)
     
     # Enhanced base prompt template with stronger emphasis on hints-only approach
     base_prompt = """
