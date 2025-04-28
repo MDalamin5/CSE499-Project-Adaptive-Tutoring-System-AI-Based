@@ -15,19 +15,20 @@ from typing import Literal, Dict, Any, List
 
 # Load environment variables
 load_dotenv()
-# groq_api_key = os.getenv("GROQ_API_KEY")
 
-# os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
-# os.environ["LANGCHAIN_TRACING_V2"] = "true"
-# os.environ["LANGCHAIN_PROJECT"] = "Interactive Way Math Problem Solving"
+# its for local machine
+os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
+os.environ["LANGCHAIN_TRACING_V2"] = "true"
+os.environ["LANGCHAIN_PROJECT"] = "Interactive Way Math Problem Solving"
 
 # Access the Groq API key from Streamlit secrets
 groq_api_key = st.secrets["GROQ_API_KEY"]
 
 # Set environment variables for Langchain tracing (if you're using it)
-os.environ["LANGCHAIN_API_KEY"] = st.secrets.get("LANGCHAIN_API_KEY", "") # Get the value if it exists
-os.environ["LANGCHAIN_TRACING_V2"] = "true"
-os.environ["LANGCHAIN_PROJECT"] = "Interactive Way Math Problem Solving"
+# os.environ["LANGCHAIN_API_KEY"] = st.secrets.get("LANGCHAIN_API_KEY", "") # Get the value if it exists
+# os.environ["LANGCHAIN_TRACING_V2"] = "true"
+# os.environ["LANGCHAIN_PROJECT"] = "Interactive Way Math Problem Solving"
+# groq_api_key = os.getenv("GROQ_API_KEY") # its for local machine
 
 # Check if API key is available
 if not groq_api_key:
@@ -475,11 +476,11 @@ def enforce_hint_only_approach(response):
 # Main Streamlit UI
 def main():
     st.set_page_config(
-        page_title="AI Math Tutor",
-        page_icon="💡",
-        layout="wide"
+    page_title="Adaptive Tutor",
+    page_icon="💡",
+    layout="wide"
     )
-    st.title("Adaptive Ai Math Tutor")
+    st.title("Adaptive AI Math Tutor")
     st.write(
      """
      Welcome! I'm your personalized `AI Math Tutor`, designed to guide you
@@ -487,8 +488,6 @@ def main():
      Let's tackle together 🤝!
      """
     )
-    
-    
     # Initialize session state
     if "messages" not in st.session_state:
         st.session_state.messages = []
@@ -632,21 +631,19 @@ def main():
             # Create a new chain with the updated prompt
             dynamic_chain = dynamic_prompt | model
             dynamic_runnable = setup_runnable(dynamic_chain)
-
-            # ----- ADDED SPINNER HERE -----
+            
+            # Invoke the chain with the updated prompt
             with st.spinner("Tutor is thinking..."):
-                # Invoke the chain with the updated prompt
                 ai_message = dynamic_runnable.invoke(
                     [HumanMessage(content=prompt)],
                     config={"configurable": {"session_id": 'math_session'}}
                 )
             
-                # Process the response to extract hint and reasoning
-                tutor_response = process_tutor_response_output(ai_message.content)
-
-                # Enforce hint-only approach by checking and modifying the response if needed
-                tutor_response = enforce_hint_only_approach(tutor_response)
-            # ----- END ADDED SPINNER -----
+            # Process the response to extract hint and reasoning
+            tutor_response = process_tutor_response_output(ai_message.content)
+            
+            # Enforce hint-only approach by checking and modifying the response if needed
+            tutor_response = enforce_hint_only_approach(tutor_response)
             
             # Save the tutor's hint for next round of analysis
             st.session_state.last_tutor_hint = tutor_response.hint
